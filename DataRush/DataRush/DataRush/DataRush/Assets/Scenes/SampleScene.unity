@@ -127,6 +127,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 227225780}
     m_Modifications:
+    - target: {fileID: 4301340599192364566, guid: 88443e6ea2fe0674e9d29c5ce3f5a5cf, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301340599192364566, guid: 88443e6ea2fe0674e9d29c5ce3f5a5cf, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7190089018650148433, guid: 88443e6ea2fe0674e9d29c5ce3f5a5cf, type: 3}
       propertyPath: m_Name
       value: halfpipeturnHP (1)
@@ -203,7 +211,7 @@ GameObject:
   m_Component:
   - component: {fileID: 227225780}
   m_Layer: 0
-  m_Name: pipes
+  m_Name: pipes (test track)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -245,6 +253,8 @@ GameObject:
   - component: {fileID: 297473011}
   - component: {fileID: 297473010}
   - component: {fileID: 297473009}
+  - component: {fileID: 297473012}
+  - component: {fileID: 297473013}
   m_Layer: 0
   m_Name: Start
   m_TagString: Untagged
@@ -277,7 +287,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 14d83e6e2823c8f4c90c14b3333a6235, type: 2}
+  - {fileID: 2100000, guid: f4561623cd389264483a36da455ab355, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -324,6 +334,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &297473012
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297473007}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.99999994, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &297473013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297473007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3283b4f4363a141479e6dde5de7bbea4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TestDebuggingScript
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,6 +512,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 227225780}
     m_Modifications:
+    - target: {fileID: 4301340599192364566, guid: 88443e6ea2fe0674e9d29c5ce3f5a5cf, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7190089018650148433, guid: 88443e6ea2fe0674e9d29c5ce3f5a5cf, type: 3}
       propertyPath: m_Name
       value: halfpipeturnHP (2)
@@ -563,7 +610,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 13
   m_Type: 1
-  m_Color: {r: 0.735849, g: 0.61320746, b: 0.61320746, a: 1}
+  m_Color: {r: 0.6037736, g: 0.1158181, b: 0.55971897, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -607,7 +654,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 3187
+  m_ColorTemperature: 3222
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -798,6 +845,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 227225780}
     m_Modifications:
+    - target: {fileID: 2817700305218908522, guid: 1d86b8c365af5ef4ea2602d883b0981c, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7291637498905378766, guid: 1d86b8c365af5ef4ea2602d883b0981c, type: 3}
       propertyPath: m_Name
       value: halfpipestraightHP (2)
@@ -872,6 +923,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 227225780}
     m_Modifications:
+    - target: {fileID: 4301340599192364566, guid: 88443e6ea2fe0674e9d29c5ce3f5a5cf, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7190089018650148433, guid: 88443e6ea2fe0674e9d29c5ce3f5a5cf, type: 3}
       propertyPath: m_Name
       value: halfpipeturnHP (3)
@@ -1032,7 +1087,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1534818892}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1051,6 +1107,8 @@ GameObject:
   - component: {fileID: 1311542324}
   - component: {fileID: 1311542323}
   - component: {fileID: 1311542322}
+  - component: {fileID: 1311542325}
+  - component: {fileID: 1311542326}
   m_Layer: 0
   m_Name: End
   m_TagString: Untagged
@@ -1083,7 +1141,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 14d83e6e2823c8f4c90c14b3333a6235, type: 2}
+  - {fileID: 2100000, guid: c213fa8b800e1aa43a71642a965d8b03, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1130,6 +1188,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!65 &1311542325
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311542321}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.99999994, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1311542326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311542321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3283b4f4363a141479e6dde5de7bbea4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TestDebuggingScript
 --- !u!1001 &1471575855
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1138,6 +1229,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 227225780}
     m_Modifications:
+    - target: {fileID: 4301340599192364566, guid: 88443e6ea2fe0674e9d29c5ce3f5a5cf, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7190089018650148433, guid: 88443e6ea2fe0674e9d29c5ce3f5a5cf, type: 3}
       propertyPath: m_Name
       value: halfpipeturnHP (4)
@@ -1204,6 +1299,81 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7531007530741556459, guid: 88443e6ea2fe0674e9d29c5ce3f5a5cf, type: 3}
   m_PrefabInstance: {fileID: 1471575855}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1534818891
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1534818892}
+  - component: {fileID: 1534818894}
+  - component: {fileID: 1534818893}
+  m_Layer: 5
+  m_Name: Just for testing purposes can be deleted
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1534818892
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534818891}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.31059, y: 0.31059, z: 0.31059}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1194164674}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -546, y: 280}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1534818893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534818891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1534818894
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534818891}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1745287080
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1212,6 +1382,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 227225780}
     m_Modifications:
+    - target: {fileID: 2817700305218908522, guid: 1d86b8c365af5ef4ea2602d883b0981c, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2817700305218908522, guid: 1d86b8c365af5ef4ea2602d883b0981c, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7291637498905378766, guid: 1d86b8c365af5ef4ea2602d883b0981c, type: 3}
       propertyPath: m_Name
       value: halfpipestraightHP (4)
@@ -1286,6 +1464,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 227225780}
     m_Modifications:
+    - target: {fileID: 2817700305218908522, guid: 1d86b8c365af5ef4ea2602d883b0981c, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7291637498905378766, guid: 1d86b8c365af5ef4ea2602d883b0981c, type: 3}
       propertyPath: m_Name
       value: halfpipestraightHP (1)
@@ -1360,6 +1542,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 227225780}
     m_Modifications:
+    - target: {fileID: 2817700305218908522, guid: 1d86b8c365af5ef4ea2602d883b0981c, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7291637498905378766, guid: 1d86b8c365af5ef4ea2602d883b0981c, type: 3}
       propertyPath: m_Name
       value: halfpipestraightHP (3)
@@ -1434,6 +1620,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 227225780}
     m_Modifications:
+    - target: {fileID: 4301340599192364566, guid: 88443e6ea2fe0674e9d29c5ce3f5a5cf, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7190089018650148433, guid: 88443e6ea2fe0674e9d29c5ce3f5a5cf, type: 3}
       propertyPath: m_Name
       value: halfpipeturnHP
@@ -1508,6 +1698,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 227225780}
     m_Modifications:
+    - target: {fileID: 2817700305218908522, guid: 1d86b8c365af5ef4ea2602d883b0981c, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2817700305218908522, guid: 1d86b8c365af5ef4ea2602d883b0981c, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7291637498905378766, guid: 1d86b8c365af5ef4ea2602d883b0981c, type: 3}
       propertyPath: m_Name
       value: halfpipestraightHP
