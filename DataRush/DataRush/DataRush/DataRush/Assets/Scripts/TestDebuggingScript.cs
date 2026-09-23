@@ -12,7 +12,7 @@ public class TestDebuggingScript : MonoBehaviour
     // Update is called once per frame
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Trigger entered");
+        Debug.Log(gameObject.name + " Collider entered " + other.gameObject.name);
 
     }
 }
