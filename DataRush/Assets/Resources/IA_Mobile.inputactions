@@ -1,0 +1,57 @@
+{
+    "version": 1,
+    "name": "IA_Mobile",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "b32944e5-f639-443a-840b-6d778d4c7fe0",
+            "actions": [
+                {
+                    "name": "Move",
+                    "type": "Value",
+                    "id": "b2d93151-b4f0-4874-8af2-3b9a0354a69e",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true,
+                    "priority": 0
+                },
+                {
+                    "name": "New action1",
+                    "type": "Button",
+                    "id": "353b1102-d67b-40a6-8236-a213a609e6f1",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false,
+                    "priority": 0
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "aa5a0a30-835c-4754-88e1-4b788640ea75",
+                    "path": "<Joystick>/stick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "12528865-3dc8-4be6-88af-c6bc4d7bfd5b",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
