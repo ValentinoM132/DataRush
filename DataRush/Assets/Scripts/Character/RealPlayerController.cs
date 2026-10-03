@@ -5,20 +5,19 @@ public class RealPlayerController : MonoBehaviour
 {
         public Vector2 moveInput;
         public float moveSpeed = 5f;
+        public GameObject joystick;
 
         public void Start()
         {
-            
+            joystick.GetComponent<FloatingJoystick>();
+
         }
         // This method is called automatically if you use Player Input "Send Messages" behavior
-        public void OnMove(InputValue value)
-        {
-            moveInput = value.Get<Vector2>();
-        }
+        
 
         void Update()
         {
-        // Calculate 3D movement direction based on Vector2 joystick coordinates
+        moveInput = joystick.GetComponent<FloatingJoystick>().JoystickValue;
         Vector3 currentRotation = transform.localEulerAngles;
         currentRotation.z = moveInput.x * 60f; // Set only the Y axis to 45 degrees
         transform.localEulerAngles = currentRotation;
