@@ -48,6 +48,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7877312682337757456, guid: 380d86c86e8180741adfdaf627684348, type: 3}
+      propertyPath: m_Name
+      value: Cyberwolf
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 380d86c86e8180741adfdaf627684348, type: 3}
       propertyPath: m_Name
       value: Cyberwolf
@@ -57,7 +61,19 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: e0a252e4385c1af49a8ddde2f381a213, type: 2}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7242944475213164239, guid: 380d86c86e8180741adfdaf627684348, type: 3}
+    - {fileID: -2793727289926329592, guid: 380d86c86e8180741adfdaf627684348, type: 3}
+    - {fileID: -5731229141766309534, guid: 380d86c86e8180741adfdaf627684348, type: 3}
+    - {fileID: -7074681897062545621, guid: 380d86c86e8180741adfdaf627684348, type: 3}
+    - {fileID: -6588137646990983289, guid: 380d86c86e8180741adfdaf627684348, type: 3}
+    - {fileID: 5722919998248869405, guid: 380d86c86e8180741adfdaf627684348, type: 3}
+    - {fileID: -2615453208677245630, guid: 380d86c86e8180741adfdaf627684348, type: 3}
+    - {fileID: -8140499575222096, guid: 380d86c86e8180741adfdaf627684348, type: 3}
+    - {fileID: -7609145667655734672, guid: 380d86c86e8180741adfdaf627684348, type: 3}
+    - {fileID: -3957782524123411102, guid: 380d86c86e8180741adfdaf627684348, type: 3}
+    - {fileID: -8513424388201257645, guid: 380d86c86e8180741adfdaf627684348, type: 3}
+    - {fileID: 5994721076960434074, guid: 380d86c86e8180741adfdaf627684348, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 380d86c86e8180741adfdaf627684348, type: 3}
