@@ -26,10 +26,10 @@ Material:
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 2
+  m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 1
-  m_CustomRenderQueue: -1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2003
   stringTagMap: {}
   disabledShaderPasses:
   - MOTIONVECTORS
@@ -62,9 +62,10 @@ Material:
     - _Line_Strength: 1
     - _Noise_Strength: 1
     - _QueueControl: 0
-    - _QueueOffset: 0
-    - _Speed: 0
+    - _QueueOffset: 3
+    - _Speed: 0.5
+    - _XRMotionVectorsPass: 0
     m_Colors:
-    - _Matric_Color: {r: 0.06666666, g: 0.8509804, b: 0.11777636, a: 1}
+    - _Matric_Color: {r: 0.10984874, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
