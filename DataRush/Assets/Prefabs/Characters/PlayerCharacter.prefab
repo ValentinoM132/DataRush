@@ -180,6 +180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   moveInput: {x: 0, y: 0}
   moveSpeed: 5
+  joystick: {fileID: 0}
 --- !u!114 &6279582947946076466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -273,7 +274,7 @@ GameObject:
   - component: {fileID: 2175921915142079354}
   m_Layer: 0
   m_Name: PlayerCharacter
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -561,6 +562,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   targetTransform: {fileID: 0}
+  EndingScreen: {fileID: 0}
+  UITurnOff: []
 --- !u!195 &1277440101631431114
 NavMeshAgent:
   m_ObjectHideFlags: 0
