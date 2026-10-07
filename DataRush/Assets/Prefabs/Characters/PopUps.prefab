@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1419759862109259}
   - component: {fileID: 2264168665676001443}
   - component: {fileID: 7910401586956531882}
+  - component: {fileID: 8583231044092581042}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -119,19 +120,22 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2264168665676001443}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8610781834417634981}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &8583231044092581042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2266081261780686695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a88ddebe111e949960b30ec2d19c5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::buttonHealth
+  mybutton: {fileID: 7910401586956531882}
+  myPanel: {fileID: 8610781834417634981}
+  currentclickcount: 3
 --- !u!1 &2437988584753019189
 GameObject:
   m_ObjectHideFlags: 0
@@ -144,6 +148,7 @@ GameObject:
   - component: {fileID: 5228499532145140778}
   - component: {fileID: 94240856089883621}
   - component: {fileID: 2074251827087024459}
+  - component: {fileID: 6960673368217320413}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -251,19 +256,22 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 94240856089883621}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6793648801645041678}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &6960673368217320413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2437988584753019189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a88ddebe111e949960b30ec2d19c5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::buttonHealth
+  mybutton: {fileID: 2074251827087024459}
+  myPanel: {fileID: 6793648801645041678}
+  currentclickcount: 3
 --- !u!1 &2763994243892448716
 GameObject:
   m_ObjectHideFlags: 0
@@ -276,6 +284,7 @@ GameObject:
   - component: {fileID: 2153553384790530681}
   - component: {fileID: 5125613293331154728}
   - component: {fileID: 4559223069047282938}
+  - component: {fileID: 7234493305814049661}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -383,19 +392,22 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5125613293331154728}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7040419410950537779}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &7234493305814049661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2763994243892448716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a88ddebe111e949960b30ec2d19c5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::buttonHealth
+  mybutton: {fileID: 4559223069047282938}
+  myPanel: {fileID: 7040419410950537779}
+  currentclickcount: 3
 --- !u!1 &5010647810645086198
 GameObject:
   m_ObjectHideFlags: 0
@@ -676,6 +688,7 @@ GameObject:
   - component: {fileID: 2075797353470776087}
   - component: {fileID: 2850334207185440969}
   - component: {fileID: 9186383963365816728}
+  - component: {fileID: 1188426923648802180}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -783,19 +796,22 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2850334207185440969}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5010647810645086198}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &1188426923648802180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7569913650541654462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a88ddebe111e949960b30ec2d19c5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::buttonHealth
+  mybutton: {fileID: 9186383963365816728}
+  myPanel: {fileID: 5010647810645086198}
+  currentclickcount: 3
 --- !u!1 &8290314737656752986
 GameObject:
   m_ObjectHideFlags: 0
@@ -884,6 +900,7 @@ GameObject:
   - component: {fileID: 1282338299830446903}
   - component: {fileID: 3106143560328114301}
   - component: {fileID: 2378558758529293714}
+  - component: {fileID: 5077492759177613968}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -991,19 +1008,22 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3106143560328114301}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8290314737656752986}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &5077492759177613968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8331133418225103527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a88ddebe111e949960b30ec2d19c5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::buttonHealth
+  mybutton: {fileID: 2378558758529293714}
+  myPanel: {fileID: 8290314737656752986}
+  currentclickcount: 3
 --- !u!1 &8610781834417634981
 GameObject:
   m_ObjectHideFlags: 0
