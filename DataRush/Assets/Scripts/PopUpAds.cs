@@ -15,18 +15,21 @@ public class PopUpAds : MonoBehaviour
     }
     private void AddPopUp()
     {
+        int randomIndex1 = Random.Range(0, Panels.Length);
+        int randomIndex2 = Random.Range(0, Sprites.Length);
+       
         if (Panels == null || Sprites == null) return;
-        int randomIndex = Random.Range(0, 5);
-        GameObject selectedObject = Panels[randomIndex];
-        if (selectedObject != null)
+        
+        GameObject selectedObject = Panels[randomIndex1];
+        if (selectedObject != null && !selectedObject.activeInHierarchy)
         {
             selectedObject.SetActive(true);
             Image uiImage = selectedObject.GetComponent<Image>();
-            if (uiImage != null && Sprites != null && randomIndex < Sprites.Length)
+            if (uiImage != null && Sprites != null && randomIndex2 < Sprites.Length)
             {
-                if (Sprites[randomIndex] != null)
+                if (Sprites[randomIndex2] != null)
                 {
-                    uiImage.sprite = Sprites[randomIndex];
+                    uiImage.sprite = Sprites[randomIndex2];
                 }
             }
             
