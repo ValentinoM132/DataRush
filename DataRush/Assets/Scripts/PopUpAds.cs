@@ -5,6 +5,16 @@ public class PopUpAds : MonoBehaviour
     [Header("Da Arrays")]
     [SerializeField] private GameObject[] Panels;
     [SerializeField] private Sprite[] Sprites;
+
+
+    private void Start()
+    {
+        GameObject popUpPanel = GameObject.FindGameObjectWithTag("popUp");  
+        for (int i = 0; i < popUpPanel.transform.childCount; i++)
+        {
+            Panels[i] = popUpPanel.transform.GetChild(i).gameObject;
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
         
@@ -32,7 +42,25 @@ public class PopUpAds : MonoBehaviour
                     uiImage.sprite = Sprites[randomIndex2];
                 }
             }
-            
+
         }
+
+        else if (!AreAllObjectsActive())
+        {
+            AddPopUp();
+        }
+    }
+
+    bool AreAllObjectsActive()
+    {
+        for (int i = 0; i < Panels.Length; i++)
+        {
+            // If any item is missing or inactive, immediately fail the check
+            if (Panels[i] == null || !Panels[i].activeInHierarchy)
+            {
+                return false;
+            }
+        }
+        return true;
     }
 }
