@@ -21,7 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Path Shader
-  m_Shader: {fileID: -6465566751694194690, guid: 29f690e407528c04180d77668799d397, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 1c9e192526135524490813d516f83c60, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -33,7 +33,6 @@ Material:
   stringTagMap: {}
   disabledShaderPasses:
   - MOTIONVECTORS
-  - XRMotionVectors
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
@@ -67,6 +66,6 @@ Material:
     - _Speed: 0.5
     - _XRMotionVectorsPass: 0
     m_Colors:
-    - _Matric_Color: {r: 0.10984874, g: 1, b: 0, a: 1}
+    - _Matric_Color: {r: 0.12549019, g: 1, b: 0.75246066, a: 0.49019608}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
