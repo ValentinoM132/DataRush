@@ -3,16 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - popUp
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - PlayeronTop
   - Water
   - UI
   - Obstacles
-  - 
+  - Pipe
   - 
   - 
   - 

@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject); // Enforce only one instance exists
             return;
         }
-        playerColor= playerMaterial.color; // Set the player's material color to the specified color
+        playerMaterial.color = playerColor; // Set the player's material color to the specified color
         Instance = this;
     }
 
