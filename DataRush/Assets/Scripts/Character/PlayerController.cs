@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
         {
             agent.SetDestination(targetTransform.position);
         }
-        if (agent.remainingDistance <= agent.stoppingDistance && !agent.pathPending)
+        if (agent.remainingDistance <= agent.stoppingDistance && !agent.pathPending && targetTransform.CompareTag("End"))
         {
             EndingScreen.SetActive(true);
             foreach (GameObject uiElement in UITurnOff)
