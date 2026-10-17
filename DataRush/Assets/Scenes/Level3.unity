@@ -579,6 +579,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5201622755993874626, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201622755993874626, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 8134735932121727402, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: m_Name
       value: Ramp Placeholder (2)
@@ -18936,6 +18944,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5201622755993874626, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201622755993874626, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.15
+      objectReference: {fileID: 0}
     - target: {fileID: 8134735932121727402, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: m_Name
       value: Ramp Placeholder (1)
@@ -32630,6 +32646,14 @@ PrefabInstance:
     - target: {fileID: 282865957476646502, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201622755993874626, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201622755993874626, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 19.25
       objectReference: {fileID: 0}
     - target: {fileID: 8134735932121727402, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: m_Name
@@ -49712,6 +49736,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5201622755993874626, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201622755993874626, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -18.7
+      objectReference: {fileID: 0}
     - target: {fileID: 8134735932121727402, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: m_Name
       value: Ramp Placeholder (4)
@@ -50706,6 +50738,14 @@ PrefabInstance:
     - target: {fileID: 282865957476646502, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201622755993874626, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 17.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201622755993874626, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.11
       objectReference: {fileID: 0}
     - target: {fileID: 8134735932121727402, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: m_Name
@@ -75387,6 +75427,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5201622755993874626, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201622755993874626, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 18.48
+      objectReference: {fileID: 0}
     - target: {fileID: 8134735932121727402, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: m_Name
       value: Ramp Placeholder (6)
@@ -77042,6 +77090,14 @@ PrefabInstance:
     - target: {fileID: 282865957476646502, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201622755993874626, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201622755993874626, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.07
       objectReference: {fileID: 0}
     - target: {fileID: 8134735932121727402, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: m_Name
@@ -87320,6 +87376,14 @@ PrefabInstance:
     - target: {fileID: 282865957476646502, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201622755993874626, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -16.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 5201622755993874626, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.16
       objectReference: {fileID: 0}
     - target: {fileID: 8134735932121727402, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: m_Name
