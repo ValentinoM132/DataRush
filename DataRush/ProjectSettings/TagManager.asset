@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - popUp
+  - End
+  - TrickCam
+  - FollowCam
+  - NavMeshCharacter
   layers:
   - Default
   - TransparentFX
