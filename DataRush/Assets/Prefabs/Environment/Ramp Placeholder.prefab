@@ -99,20 +99,10 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a9babef91ee9f7438a3b50b884e4879, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: '::'
+  m_EditorClassIdentifier: Assembly-CSharp::TrickRamp
   jumpForce: 35
-  followCam: {fileID: 0}
-  trickCam: {fileID: 0}
   trickDurationInSeconds: 5
-  playerWithNavMesh: {fileID: 0}
-  transformForNavMesh: {fileID: 1956397817165491681}
-  targetPosition: {x: 0, y: 0, z: 0}
-  duration: 1
-  playerWithANavMesh: {fileID: 0}
-  startPosition: {x: 0, y: 0, z: 0}
-  elapsedTime: 0
-  shouldLerp: 0
-  shouldCatch: 0
+  LandingLocation: {fileID: 1956397817165491681}
 --- !u!33 &8750809638839356060
 MeshFilter:
   m_ObjectHideFlags: 0

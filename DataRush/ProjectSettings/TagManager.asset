@@ -6,6 +6,9 @@ TagManager:
   tags:
   - popUp
   - End
+  - TrickCam
+  - FollowCam
+  - NavMeshCharacter
   layers:
   - Default
   - TransparentFX
