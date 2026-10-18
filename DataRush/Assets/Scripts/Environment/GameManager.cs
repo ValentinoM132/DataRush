@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour
 
     private void UpdateUI()
     {
-        scoreText.text = "Score: " + CurrentScore.ToString();
+        scoreText.text = CurrentScore.ToString();
         healthText.text = "Health: " + PlayerHealth.ToString();
     }
 

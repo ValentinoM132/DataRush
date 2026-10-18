@@ -2,6 +2,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.AI;
+using Unity.Mathematics;
 
 public class TrickRamp : MonoBehaviour
 {
@@ -13,11 +14,13 @@ public class TrickRamp : MonoBehaviour
     private GameObject playerWithNavMesh;
     private GameObject TrickingPlayer;
     private GameObject followCam;
+    private GameObject mainHud;
 
     public void Awake()
     {
         followCam = GameObject.FindGameObjectWithTag("FollowCam");
         playerWithNavMesh = GameObject.FindGameObjectWithTag("NavMeshCharacter");
+        mainHud = GameObject.FindGameObjectWithTag("HUD");
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -32,11 +35,14 @@ public class TrickRamp : MonoBehaviour
     public IEnumerator trickingRoutine()
     {
         GameObject trickCam = TrickingPlayer.transform.Find("TrickCam").gameObject;
-
-        yield return new WaitForSeconds(0.5f); // Wait half a second before camera transition
+        GameObject trickGame = mainHud.transform.Find("QTE_Tricks").gameObject;
         
+        yield return new WaitForSeconds(0.5f); // Wait half a second before camera transition
+        TrickingPlayer.transform.parent.GetComponent<RealPlayerController>().canMove = false;
+        trickGame.GetComponentInChildren<TrickingMinigame>().player = TrickingPlayer ;
         followCam.SetActive(false);
         trickCam.SetActive(true);
+        trickGame.SetActive(true);
         playerWithNavMesh.GetComponent<PlayerController>().targetTransform = LandingLocation.transform; // As camera is away transition the player nav mesh to the landing location
         
         yield return new WaitForSeconds(trickDurationInSeconds); // wait until trick sequence is done
@@ -45,7 +51,8 @@ public class TrickRamp : MonoBehaviour
         playerWithNavMesh.GetComponent<PlayerController>().targetTransform = endTransform.transform; //set the player to return back to moving forward
         
         yield return new WaitForSeconds(1f);
-
+        
+        trickGame.SetActive(false);
         trickCam.SetActive(false); //cameras go back to normal
         followCam.SetActive(true);
         shouldCatch = true;
@@ -68,7 +75,9 @@ public class TrickRamp : MonoBehaviour
             trickingPlayer.gameObject.GetComponent<Rigidbody>().linearVelocity = Vector3.zero;
             trickingPlayer.gameObject.GetComponent<Rigidbody>().useGravity = false;
             trickingPlayer.gameObject.GetComponent<Rigidbody>().mass = 0.1f;
-            
+            trickingPlayer.transform.localRotation = Quaternion.Euler(0,90,0) ;
+            TrickingPlayer.transform.parent.GetComponent<RealPlayerController>().canMove = true;
+
 
 
 

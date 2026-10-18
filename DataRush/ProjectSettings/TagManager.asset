@@ -9,6 +9,7 @@ TagManager:
   - TrickCam
   - FollowCam
   - NavMeshCharacter
+  - HUD
   layers:
   - Default
   - TransparentFX
