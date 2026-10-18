@@ -83867,6 +83867,10 @@ PrefabInstance:
       propertyPath: 'UITurnOff.Array.data[1]'
       value: 
       objectReference: {fileID: 1640282583}
+    - target: {fileID: 5021321739437444701, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+      propertyPath: soundDictionary.Array.data[4].value
+      value: 
+      objectReference: {fileID: 8300000, guid: 3c881c5d08dd9e448bbc5dd236d14e84, type: 3}
     - target: {fileID: 6536303372366485025, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
       propertyPath: m_Name
       value: PlayerCharacter
