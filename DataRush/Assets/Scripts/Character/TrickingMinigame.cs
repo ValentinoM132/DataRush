@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.EnhancedTouch;
+using UnityEngine.UIElements;
 
 public class TrickingMinigame : MonoBehaviour
 {
@@ -13,6 +14,10 @@ public class TrickingMinigame : MonoBehaviour
     public float trickFailureVolume = 1f;
     private Touchscreen touchScreen;
     private bool Overlapping;
+    private float comboCounter;
+    public GameObject comboTransform;
+    public GameObject comboPrefab;
+    public Sprite[] comboImage = new Sprite[3];
     void Start()
     {
         hitTarget.transform.localPosition = new Vector2(Random.Range(-320, 320), hitTarget.transform.localPosition.y);
@@ -22,6 +27,8 @@ public class TrickingMinigame : MonoBehaviour
     private void OnEnable()
     {
         EnhancedTouchSupport.Enable(); // Must be enabled for Touch.activeTouches to work
+        comboCounter = 0;
+        speed = 0.75f;
     }
 
     private void OnDisable()
@@ -40,11 +47,20 @@ public class TrickingMinigame : MonoBehaviour
                 // This is the clean, unbuggy equivalent to wasPressedThisFrame
                 Debug.Log("Touch pressed safely!");
 
-                Debug.Log("RegisteringTouch");
+                
                 if (IsOverlapping(hitTarget.GetComponent<RectTransform>(), Needle.GetComponent<RectTransform>()))
                 {
-
-                    Debug.Log("Good!~");
+                    GameObject Combo = Instantiate(comboPrefab, comboTransform.transform);
+                    Combo.gameObject.transform.SetParent(comboTransform.transform, false);
+                    if (comboCounter < 4)
+                    {
+                        Combo.GetComponent<ImageFloatUp>().sprite = comboImage[1];
+                    }
+                    else if (comboCounter >= 4)
+                    {
+                        Combo.GetComponent<ImageFloatUp>().sprite = comboImage[2];
+                    }
+                        comboCounter++;
                     speed = speed + .15f;
                     GameManager.Instance.AddScore(500);
                     SoundManager.Instance.PlaySound("TrickSuccess", trickSuccessVolume);
@@ -52,8 +68,12 @@ public class TrickingMinigame : MonoBehaviour
                 }
                 else
                 {
-
-                    Debug.Log("Bad");
+                    
+                    comboCounter = 0;
+                    GameObject Combo = Instantiate(comboPrefab, comboTransform.transform);
+                    Combo.gameObject.transform.SetParent(comboTransform.transform, false);
+                    Combo.GetComponent<ImageFloatUp>().sprite = comboImage[0];
+                    
                     speed = 1f;
                     SoundManager.Instance.PlaySound("TrickFailure", trickFailureVolume);
                     GameManager.Instance.AddScore(-500);
