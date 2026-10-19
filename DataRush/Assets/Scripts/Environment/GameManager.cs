@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
         {
             Time.timeScale = 0; // Pause the game
             gameOverPanel.SetActive(true); // Show the Game Over UI panel
-            SoundManager.Instance.PlaySound("GameOver", 1f);
+            SoundManager.Instance.PlaySound("GameOver", .15f);
             Debug.Log("Game Over!");
         }
     }
