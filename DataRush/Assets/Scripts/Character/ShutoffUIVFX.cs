@@ -33,7 +33,7 @@ public class ShutoffUIVFX : MonoBehaviour
                 {
                     vfx.SetActive(false);
                 }
-                StartCoroutine(StartCountdown(5f));
+                StartCoroutine(StartCountdown(7f));
             }
         }
     }

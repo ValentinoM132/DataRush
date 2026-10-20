@@ -674,6 +674,10 @@ PrefabInstance:
       value: -13.34
       objectReference: {fileID: 0}
     - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: UIElementsToDisable
+      value: 
+      objectReference: {fileID: 1882837449}
+    - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: 'vfxToDisable.Array.data[0]'
       value: 
       objectReference: {fileID: 1407292801}
@@ -19425,6 +19429,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -15.96
       objectReference: {fileID: 0}
+    - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: UIElementsToDisable
+      value: 
+      objectReference: {fileID: 1882837449}
     - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: 'vfxToDisable.Array.data[0]'
       value: 
@@ -51199,6 +51207,10 @@ PrefabInstance:
       value: -17.52
       objectReference: {fileID: 0}
     - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: UIElementsToDisable
+      value: 
+      objectReference: {fileID: 1882837449}
+    - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: 'vfxToDisable.Array.data[0]'
       value: 
       objectReference: {fileID: 1407292801}
@@ -52275,6 +52287,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -18.61
       objectReference: {fileID: 0}
+    - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: UIElementsToDisable
+      value: 
+      objectReference: {fileID: 1882837449}
     - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: 'vfxToDisable.Array.data[0]'
       value: 
@@ -77896,6 +77912,10 @@ PrefabInstance:
       value: -15.71
       objectReference: {fileID: 0}
     - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: UIElementsToDisable
+      value: 
+      objectReference: {fileID: 1882837449}
+    - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: 'vfxToDisable.Array.data[0]'
       value: 
       objectReference: {fileID: 1407292801}
@@ -79762,6 +79782,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -19.18
       objectReference: {fileID: 0}
+    - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: UIElementsToDisable
+      value: 
+      objectReference: {fileID: 1882837449}
     - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: 'vfxToDisable.Array.data[0]'
       value: 
