@@ -64,7 +64,7 @@ public class TrickingMinigame : MonoBehaviour
                     speed = speed + .15f;
                     GameManager.Instance.AddScore(500);
                     SoundManager.Instance.PlaySound("TrickSuccess", trickSuccessVolume);
-                    player.transform.rotation = Random.rotation;
+                   // player.transform.rotation = Random.rotation;
                 }
                 else
                 {
