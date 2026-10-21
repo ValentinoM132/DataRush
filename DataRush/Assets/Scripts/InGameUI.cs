@@ -7,6 +7,7 @@ public class InGameUI : MonoBehaviour
     public void PauseGame()
     {
         Time.timeScale = 0f; // Pause the game
+        SoundManager.Instance.PlaySound("MenuClick", 1f);
         pauseMenuUI.SetActive(true);
         GameScreen.SetActive(false);
     }
@@ -14,6 +15,7 @@ public class InGameUI : MonoBehaviour
     public void resumeGame()
     {
         Time.timeScale = 1f; // Resume the game
+        SoundManager.Instance.PlaySound("MenuClick", 1f);
         pauseMenuUI.SetActive(false);
         GameScreen.SetActive(true);
     }

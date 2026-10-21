@@ -31,18 +31,24 @@ public class GameManager : MonoBehaviour
         {
             Time.timeScale = 0; // Pause the game
             gameOverPanel.SetActive(true); // Show the Game Over UI panel
+            SoundManager.Instance.PlaySound("GameOver", .15f);
             Debug.Log("Game Over!");
         }
     }
 
     public void AddScore(int points)
     {
+        if(points >= 1)
+        TextSpawner.Instance.spawnText("+" + points, Color.green);
+        else if (points < 0)
+        TextSpawner.Instance.spawnText( points.ToString(), Color.red);
         CurrentScore += points;
     }
 
     private void UpdateUI()
     {
-        scoreText.text = "Score: " + CurrentScore.ToString();
+        scoreText.text = CurrentScore.ToString();
+        
         healthText.text = "Health: " + PlayerHealth.ToString();
     }
 
@@ -50,6 +56,7 @@ public class GameManager : MonoBehaviour
     {
         if (canGetHit)
         {
+            SoundManager.Instance.PlaySound("CharacterDamage", 1f);
             PlayerHealth -= damage;
             canGetHit = false;
             playerMaterial.color = Color.red; // Change the player's material color to red

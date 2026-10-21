@@ -34,6 +34,7 @@ public class PopUpAds : MonoBehaviour
         if (selectedObject != null && !selectedObject.activeInHierarchy)
         {
             selectedObject.SetActive(true);
+            SoundManager.Instance.PlaySound("PopUpAd", .6f);
             Image uiImage = selectedObject.GetComponent<Image>();
             if (uiImage != null && Sprites != null && randomIndex2 < Sprites.Length)
             {

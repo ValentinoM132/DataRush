@@ -21,9 +21,10 @@ public class PlayerController : MonoBehaviour
         {
             agent.SetDestination(targetTransform.position);
         }
-        if (agent.remainingDistance <= agent.stoppingDistance && !agent.pathPending)
+        if (agent.remainingDistance <= agent.stoppingDistance && !agent.pathPending && targetTransform.CompareTag("End"))
         {
             EndingScreen.SetActive(true);
+            SoundManager.Instance.PlaySound("WinSound", .5f);
             foreach (GameObject uiElement in UITurnOff)
             {
                 if (uiElement != null && uiElement.activeSelf)
