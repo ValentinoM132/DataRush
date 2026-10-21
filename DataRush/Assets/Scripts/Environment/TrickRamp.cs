@@ -24,12 +24,16 @@ public class TrickRamp : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        TrickingPlayer = other.gameObject;
-        // We're using rigidBodies to launch them up using gravity, a fun effect. Cooler looking than just translating them up and down
-        other.gameObject.GetComponent<Rigidbody>().useGravity = true;
-        other.gameObject.GetComponent<Rigidbody>().mass = 1f;
-        other.gameObject.GetComponent<Rigidbody>().AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-        StartCoroutine(trickingRoutine());
+        if (other.CompareTag("Player"))
+        {
+            TrickingPlayer = other.gameObject;
+            // We're using rigidBodies to launch them up using gravity, a fun effect. Cooler looking than just translating them up and down
+            other.gameObject.GetComponent<Rigidbody>().useGravity = true;
+            other.gameObject.GetComponent<Rigidbody>().mass = 1f;
+            other.gameObject.GetComponent<Rigidbody>().AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            GameManager.Instance.CancelBlaster(); // Ends blaster powerup so player doesn't shoot mid jump
+            StartCoroutine(trickingRoutine());
+        }
     }
 
     public IEnumerator trickingRoutine()
