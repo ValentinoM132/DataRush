@@ -1,31 +1,40 @@
 using Unity.VectorGraphics;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
     public int CurrentScore { get; set; } = 0;
     public int PlayerHealth { get; set; } = 5;
+    [Header("Player Settings")]
     public Material playerMaterial; // Reference to the player's material
     public Color playerColor;
     public bool canGetHit = true;
+    [Header("UI Connections")]
     public TMPro.TextMeshProUGUI scoreText; // Reference to the UI Text component
     public TMPro.TextMeshProUGUI healthText; // Reference to the UI Text component
     public GameObject gameOverPanel; // Reference to the Game Over UI panel
 
+    [Header("Powerup Settings")]
     private int scoreMultiplier = 1;
     private bool multPowerupActive = false;
     private float multPowerupDuration = 0f;
-    public float baseMultPowerupDuration = 15f;
+    [SerializeField, Range(0.5f, 30f)] public float baseMultPowerupDuration = 15f;
 
-    public bool invulnPowerupActive = false;
+    private bool invulnPowerupActive = false;
     private float invulnPowerupDuration = 0f;
-    public float baseInvulnPowerupDuration = 10f;
+    [SerializeField, Range(0.5f, 30f)] public float baseInvulnPowerupDuration = 10f;
 
     private bool blasterPowerupActive = false;
     private float blasterPowerupDuration = 0f;
-    public float baseBlasterPowerupDuration = 12f;
+    [SerializeField, Range(0.5f, 30f)] public float baseBlasterPowerupDuration = 12f;
     private PlayerBlaster blaster;
+
+    [Header("Powerup UI Connections")]
+    [SerializeField] public GameObject[] durationBars; // 0 = Mult, 1 = Blaster, 2 = Invuln
+    [SerializeField] public Image[] durationBarFills;
+
 
 
     private void Awake()
@@ -40,7 +49,7 @@ public class GameManager : MonoBehaviour
         Instance = this;
         UpdateUI();
 
-        blaster = Component.FindAnyObjectByType<PlayerBlaster>();
+        blaster = Component.FindAnyObjectByType<PlayerBlaster>(); // Get the playerblaster in the scene
     }
 
     private void Update()
@@ -55,24 +64,29 @@ public class GameManager : MonoBehaviour
         if (multPowerupActive) // mult powerup timer
         {
             multPowerupDuration -= Time.deltaTime;
+            durationBarFills[0].fillAmount = multPowerupDuration / baseMultPowerupDuration;
             if (multPowerupDuration <= 0)
             {
                 multPowerupActive = false;
                 scoreMultiplier = 1;
+                durationBars[0].SetActive(false);
             }
         }
         if (invulnPowerupActive) // invulnerability powerup timer
         {
             invulnPowerupDuration -= Time.deltaTime;
+            durationBarFills[2].fillAmount = invulnPowerupDuration / baseInvulnPowerupDuration;
             if (invulnPowerupDuration <= 0)
             {
                 invulnPowerupActive = false;
                 canGetHit = true;
+                durationBars[2].SetActive(false);
             }
         }
         if (blasterPowerupActive) // blaster powerup timer
         {
             blasterPowerupDuration -= Time.deltaTime;
+            durationBarFills[1].fillAmount = blasterPowerupDuration / baseBlasterPowerupDuration;
             if (blasterPowerupDuration <= 0)
             {
                 blasterPowerupActive = false;
@@ -80,6 +94,7 @@ public class GameManager : MonoBehaviour
                 {
                     blaster.DeactivateBlaster();
                 }
+                durationBars[1].SetActive(false);
             }
         }
     }
@@ -131,6 +146,8 @@ public class GameManager : MonoBehaviour
         scoreMultiplier *= 2; // 2x Mult powerups can stack
         multPowerupDuration = baseMultPowerupDuration;
         multPowerupActive = true;
+        durationBarFills[0].fillAmount = multPowerupDuration;
+        durationBars[0].SetActive(true);
     }
     // Call when Invulnerability powerup is picked up (or maybe a debug function if needed for testing)
     public void InvulnerabilityPowerup()
@@ -138,6 +155,8 @@ public class GameManager : MonoBehaviour
         canGetHit = false;
         invulnPowerupDuration = baseInvulnPowerupDuration;
         invulnPowerupActive = true;
+        durationBarFills[2].fillAmount = invulnPowerupDuration;
+        durationBars[2].SetActive(true);
     }
     // Call when player pickes up Blaster powerup
     public void BlasterPowerup()
@@ -149,14 +168,47 @@ public class GameManager : MonoBehaviour
         {
             blaster.ActivateBlaster();
         }
+        durationBarFills[2].fillAmount = blasterPowerupDuration;
+        durationBars[1].SetActive(true);
     }
 
-    public void CancelBlaster() // used to cancel this powerup, mostly for the ramps so you don't just shoot wildly mid jump
+    public void PauseBlaster() // used to pause this powerup, mostly for the ramps so you don't just shoot wildly mid jump
     {
         if (blasterPowerupActive && blaster != null)
         {
             blaster.DeactivateBlaster();
             blasterPowerupActive = false;
+            durationBars[1].SetActive(false);
         }
+    }
+
+    public void UnpauseBlaster() // unpauses the blaster if any duration was remaining on the powerup
+    {
+        if (blasterPowerupDuration > 0 && blaster != null)
+        {
+            blaster.ActivateBlaster();
+            blasterPowerupActive = true;
+            durationBars[1].SetActive(true);
+        }
+    }
+
+    public void PauseInvuln()
+    {
+        invulnPowerupActive = false;
+        durationBars[2].SetActive(false);
+    }
+
+    public void UnpauseInvuln()
+    {
+        if (invulnPowerupDuration > 0)
+        {
+            invulnPowerupActive = true;
+            durationBars[2].SetActive(true);
+        }
+    }
+
+    public bool IsInvulnerable()
+    {
+        return invulnPowerupActive;
     }
 }

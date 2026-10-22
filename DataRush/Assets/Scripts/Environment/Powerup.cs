@@ -26,18 +26,23 @@ public class Powerup : MonoBehaviour
                     break;
             }
         }
+        var particleRenderer = GetComponentInChildren<ParticleSystemRenderer>();
+
 
         // Set the Texture to match the corresponding PowerupType
         switch (type)
         {
             case PowerupType.X2Multiplier:
                 powerupIconRenderer.material.SetTexture("_IconSprite", powerupTextures[0]);
+                particleRenderer.material.SetTexture("_IconSprite", powerupTextures[0]);
                 break;
             case PowerupType.Invulnerability:
                 powerupIconRenderer.material.SetTexture("_IconSprite", powerupTextures[1]);
+                particleRenderer.material.SetTexture("_IconSprite", powerupTextures[1]);
                 break;
             case PowerupType.Blaster:
                 powerupIconRenderer.material.SetTexture("_IconSprite", powerupTextures[2]);
+                particleRenderer.material.SetTexture("_IconSprite", powerupTextures[2]);
                 break;
         }
     }

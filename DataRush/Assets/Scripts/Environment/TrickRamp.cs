@@ -31,12 +31,14 @@ public class TrickRamp : MonoBehaviour
             other.gameObject.GetComponent<Rigidbody>().useGravity = true;
             other.gameObject.GetComponent<Rigidbody>().mass = 1f;
             other.gameObject.GetComponent<Rigidbody>().AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            GameManager.Instance.CancelBlaster(); // Ends blaster powerup so player doesn't shoot mid jump
-            StartCoroutine(trickingRoutine());
+            // Pause Blaster and Invuln powerups on jump since they don't do anything and it would feel bad to get these and have them be wasted immediately
+            GameManager.Instance.PauseBlaster();
+            GameManager.Instance.PauseInvuln();
+            StartCoroutine(TrickingRoutine());
         }
     }
 
-    public IEnumerator trickingRoutine()
+    public IEnumerator TrickingRoutine()
     {
         GameObject trickCam = TrickingPlayer.transform.Find("TrickCam").gameObject;
         GameObject trickGame = mainHud.transform.Find("QTE_Tricks").gameObject;
@@ -81,8 +83,8 @@ public class TrickRamp : MonoBehaviour
             trickingPlayer.gameObject.GetComponent<Rigidbody>().mass = 0.1f;
             trickingPlayer.transform.localRotation = Quaternion.Euler(0,90,0) ;
             TrickingPlayer.transform.parent.GetComponent<RealPlayerController>().canMove = true;
-
-
+            GameManager.Instance.UnpauseBlaster();
+            GameManager.Instance.UnpauseInvuln();
 
 
         }

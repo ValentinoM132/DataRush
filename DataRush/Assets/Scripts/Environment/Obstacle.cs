@@ -7,7 +7,7 @@ public class Obstacle : MonoBehaviour
         //Debug.Log("Obstacle collided with: " + other.gameObject.name);
         if (other.CompareTag("Player"))
         {
-            if (!GameManager.Instance.invulnPowerupActive)
+            if (!GameManager.Instance.IsInvulnerable())
             {
                 GameManager.Instance.AddScore(-100);
                 GameManager.Instance.ReduceHealth(1);
