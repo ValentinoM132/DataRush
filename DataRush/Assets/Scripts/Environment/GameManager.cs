@@ -174,7 +174,7 @@ public class GameManager : MonoBehaviour
 
     public void PauseBlaster() // used to pause this powerup, mostly for the ramps so you don't just shoot wildly mid jump
     {
-        if (blasterPowerupActive && blaster != null)
+        if (blasterPowerupActive && blaster != null && durationBars[1] != null)
         {
             blaster.DeactivateBlaster();
             blasterPowerupActive = false;
@@ -195,12 +195,15 @@ public class GameManager : MonoBehaviour
     public void PauseInvuln()
     {
         invulnPowerupActive = false;
-        durationBars[2].SetActive(false);
+        if (durationBars[2] != null)
+        {
+            durationBars[2].SetActive(false);
+        }
     }
 
     public void UnpauseInvuln()
     {
-        if (invulnPowerupDuration > 0)
+        if (invulnPowerupDuration > 0 && durationBars[2] != null)
         {
             invulnPowerupActive = true;
             durationBars[2].SetActive(true);

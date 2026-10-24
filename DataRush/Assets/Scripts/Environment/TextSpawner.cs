@@ -18,6 +18,9 @@ public class TextSpawner : MonoBehaviour
             return;
         }
 
+        Player = GameObject.FindGameObjectWithTag("Player");
+        camera = GameObject.FindGameObjectWithTag("FollowCam").GetComponent<Camera>();
+
         Instance = this;
     }
     public void spawnText(string Text, Color color)

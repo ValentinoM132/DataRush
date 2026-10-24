@@ -499,17 +499,17 @@ MonoBehaviour:
   - key: CoinPickup
     value: {fileID: 8300000, guid: b198ef4cf97161943a282bdbf199c454, type: 3}
   - key: TrickSuccess
-    value: {fileID: 0}
+    value: {fileID: 8300000, guid: 442c474f64d11de458dace5eada848ef, type: 3}
   - key: TrickFailure
-    value: {fileID: 0}
+    value: {fileID: 8300000, guid: 0d1861e8c73d0214d81203d1183566df, type: 3}
   - key: CharacterDamage
     value: {fileID: 8300000, guid: db9ba4ea0e80297418314a41f8b502d3, type: 3}
   - key: WinSound
-    value: {fileID: 0}
+    value: {fileID: 8300000, guid: 3c881c5d08dd9e448bbc5dd236d14e84, type: 3}
   - key: GameOver
-    value: {fileID: 0}
+    value: {fileID: 8300000, guid: e45955ff253063846ba64b44e0ef990e, type: 3}
   - key: MenuClick
-    value: {fileID: 0}
+    value: {fileID: 8300000, guid: 59e75b30ea373884ca15512b030cc65a, type: 3}
   - key: PopUpAd
     value: {fileID: 8300000, guid: f60c5caff1013964690b4800566b2098, type: 3}
   audioSource: {fileID: 3296555972534264791}

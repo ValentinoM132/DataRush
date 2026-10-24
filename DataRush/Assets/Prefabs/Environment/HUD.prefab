@@ -1706,6 +1706,7 @@ RectTransform:
   - {fileID: 6481009207053983149}
   - {fileID: 7084638670755922067}
   - {fileID: 2363200437390578981}
+  - {fileID: 6306101506215582925}
   m_Father: {fileID: 6588848865976030200}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -2358,6 +2359,47 @@ MonoBehaviour:
   speed: 1
   trickSuccessVolume: 0
   trickFailureVolume: 0
+  comboTransform: {fileID: 8928627085752683976}
+  comboPrefab: {fileID: 5860688822773102815, guid: 70e83f75a40ffab429984aedddccdf35, type: 3}
+  comboImage:
+  - {fileID: 5109274971154803378, guid: f95a8c150c15ac545963f60931c3735a, type: 3}
+  - {fileID: -5339466008653722315, guid: 20355dcc87404244d8f8d855b3a26009, type: 3}
+  - {fileID: -283756630952673200, guid: 2a1f133a8dae8f84c8473a4c71d78a6f, type: 3}
+--- !u!1 &8928627085752683976
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6306101506215582925}
+  m_Layer: 5
+  m_Name: ComboTransform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6306101506215582925
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8928627085752683976}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8293392111190404294}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 450}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8965918438075705453
 GameObject:
   m_ObjectHideFlags: 0
