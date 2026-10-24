@@ -24,15 +24,21 @@ public class TrickRamp : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        TrickingPlayer = other.gameObject;
-        // We're using rigidBodies to launch them up using gravity, a fun effect. Cooler looking than just translating them up and down
-        other.gameObject.GetComponent<Rigidbody>().useGravity = true;
-        other.gameObject.GetComponent<Rigidbody>().mass = 1f;
-        other.gameObject.GetComponent<Rigidbody>().AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-        StartCoroutine(trickingRoutine());
+        if (other.CompareTag("Player"))
+        {
+            TrickingPlayer = other.gameObject;
+            // We're using rigidBodies to launch them up using gravity, a fun effect. Cooler looking than just translating them up and down
+            other.gameObject.GetComponent<Rigidbody>().useGravity = true;
+            other.gameObject.GetComponent<Rigidbody>().mass = 1f;
+            other.gameObject.GetComponent<Rigidbody>().AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            // Pause Blaster and Invuln powerups on jump since they don't do anything and it would feel bad to get these and have them be wasted immediately
+            GameManager.Instance.PauseBlaster();
+            GameManager.Instance.PauseInvuln();
+            StartCoroutine(TrickingRoutine());
+        }
     }
 
-    public IEnumerator trickingRoutine()
+    public IEnumerator TrickingRoutine()
     {
         GameObject trickCam = TrickingPlayer.transform.Find("TrickCam").gameObject;
         GameObject trickGame = mainHud.transform.Find("QTE_Tricks").gameObject;
@@ -77,8 +83,8 @@ public class TrickRamp : MonoBehaviour
             trickingPlayer.gameObject.GetComponent<Rigidbody>().mass = 0.1f;
             trickingPlayer.transform.localRotation = Quaternion.Euler(0,90,0) ;
             TrickingPlayer.transform.parent.GetComponent<RealPlayerController>().canMove = true;
-
-
+            GameManager.Instance.UnpauseBlaster();
+            GameManager.Instance.UnpauseInvuln();
 
 
         }

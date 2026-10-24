@@ -10,6 +10,7 @@ TagManager:
   - FollowCam
   - NavMeshCharacter
   - HUD
+  - PlayerProjectile
   layers:
   - Default
   - TransparentFX
