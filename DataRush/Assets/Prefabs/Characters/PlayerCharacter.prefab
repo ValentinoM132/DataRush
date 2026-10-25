@@ -1379,8 +1379,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerBlaster
   bulletPrefab: {fileID: 5434229867848473338, guid: e22cdfded45b3654697ba199d7234bc9, type: 3}
   bulletSpawnLocation: {fileID: 7918317202210147502}
-  fireRate: 5
-  bulletSpeed: 10
+  fireRate: 4
+  bulletSpeed: 20
 --- !u!4 &7589398485861884240 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9064213114410782889, guid: 4c451ea94786a9e45b4d89faa63d26f2, type: 3}

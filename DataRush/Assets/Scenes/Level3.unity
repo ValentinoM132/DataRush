@@ -9855,13 +9855,13 @@ MonoBehaviour:
   baseInvulnPowerupDuration: 10
   baseBlasterPowerupDuration: 12
   durationBars:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1882837451}
+  - {fileID: 1882837453}
+  - {fileID: 1882837455}
   durationBarFills:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1882837450}
+  - {fileID: 1882837452}
+  - {fileID: 1882837454}
 --- !u!4 &258091991
 Transform:
   m_ObjectHideFlags: 0
@@ -79463,6 +79463,54 @@ PrefabInstance:
 --- !u!1 &1882837449 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4557945733284557010, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
+  m_PrefabInstance: {fileID: 1882837448}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1882837450 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1775710415334334024, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
+  m_PrefabInstance: {fileID: 1882837448}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+--- !u!1 &1882837451 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8913452150810966916, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
+  m_PrefabInstance: {fileID: 1882837448}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1882837452 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7739162808244221731, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
+  m_PrefabInstance: {fileID: 1882837448}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+--- !u!1 &1882837453 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3722850386772975445, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
+  m_PrefabInstance: {fileID: 1882837448}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1882837454 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3171003053356301099, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
+  m_PrefabInstance: {fileID: 1882837448}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+--- !u!1 &1882837455 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4185065966874417240, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
   m_PrefabInstance: {fileID: 1882837448}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1885994414
