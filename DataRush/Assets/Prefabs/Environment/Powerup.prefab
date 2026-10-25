@@ -28,9 +28,9 @@ Transform:
   m_GameObject: {fileID: 5612341613997838787}
   serializedVersion: 2
   m_LocalRotation: {x: 0.70710707, y: -0, z: -0, w: 0.70710653}
-  m_LocalPosition: {x: -0.0000076293945, y: 2.0761104, z: 0}
-  m_LocalScale: {x: 0.0815835, y: 1, z: 0.1576301}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -0.0000076293945, y: 3.17, z: 0}
+  m_LocalScale: {x: 0.19, y: 2.3289022, z: 0.3671051}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8900120861209387123}
   m_Father: {fileID: 8234909583219584979}
@@ -241,11 +241,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fe5d99342bb91c4d892e93c949473ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Powerup
-  type: 0
+  type: 3
   powerupTextures:
-  - {fileID: 2800000, guid: 9cfe7e60451a08942a6cfdeece3069ec, type: 3}
-  - {fileID: 2800000, guid: 66cf8719e5d6063448a402d2518abfd0, type: 3}
-  - {fileID: 2800000, guid: 27e7b29cbdc111b458aee1f25884653f, type: 3}
+  - {fileID: 2800000, guid: 7b87df98187fdca4bb1110cb3aaecf2f, type: 3}
+  - {fileID: 2800000, guid: 5081773fdb01705469ea950d02c848bb, type: 3}
+  - {fileID: 2800000, guid: 5a5af3440ebb93240bc1622978598b1c, type: 3}
   powerupIconRenderer: {fileID: 5614775965501321379}
 --- !u!95 &9016635324044401732
 Animator:

@@ -9,7 +9,7 @@ public class TextSpawner : MonoBehaviour
     public Camera camera;
 
     public static TextSpawner Instance { get; private set; }
-    private void Awake()
+    private void Start()
     {
         // Check if an instance already exists
         if (Instance != null && Instance != this)

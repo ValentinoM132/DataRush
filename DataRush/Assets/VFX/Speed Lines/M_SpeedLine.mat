@@ -42,6 +42,7 @@ Material:
     - _Opacity: 1
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _XRMotionVectorsPass: 1
     m_Colors:
     - _Line_Color: {r: 0.2198736, g: 0.764151, b: 0.28372896, a: 1}
   m_BuildTextureStacks: []

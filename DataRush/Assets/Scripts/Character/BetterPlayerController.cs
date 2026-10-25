@@ -30,13 +30,13 @@ public class BetterPlayerController : MonoBehaviour
         if (Physics.Raycast(raycastShootOut.position, -transform.right * 10f, out leftHitData, 10f, layerMask))
         {
             leftDistance = leftHitData.distance;
-            Debug.Log("leftDistance = " + leftDistance);
+
         }
 
         if (Physics.Raycast(raycastShootOut.position, transform.right * 10f, out rightHitData, 10f, layerMask))
         {
             rightDistance = rightHitData.distance;
-            Debug.Log("rightDistance = " + rightDistance);
+
         }
 
         if (rightDistance > leftDistance)

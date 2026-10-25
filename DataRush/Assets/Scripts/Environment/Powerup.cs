@@ -52,6 +52,7 @@ public class Powerup : MonoBehaviour
         //Debug.Log("Obstacle collided with: " + other.gameObject.name);
         if (other.CompareTag("Player"))
         {
+            SoundManager.Instance.PlaySound("PowerUp", 1f);
             switch (type)
             {
                 case PowerupType.X2Multiplier:

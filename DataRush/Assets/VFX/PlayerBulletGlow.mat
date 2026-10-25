@@ -40,6 +40,7 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _XRMotionVectorsPass: 1
     m_Colors:
     - _GlowColor: {r: 766.99603, g: 538.53406, b: 0, a: 0.8627451}
   m_BuildTextureStacks: []
