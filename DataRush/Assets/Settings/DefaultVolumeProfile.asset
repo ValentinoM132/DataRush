@@ -15,13 +15,13 @@ MonoBehaviour:
   active: 1
   lift:
     m_OverrideState: 1
-    m_Value: {x: 0.7892874, y: 1, z: 0.7357631, w: 0}
+    m_Value: {x: 0.7177441, y: 0.04143244, z: 1, w: 0}
   gamma:
     m_OverrideState: 1
-    m_Value: {x: 0.88728845, y: 0.9429842, z: 1, w: 0}
+    m_Value: {x: 0.7244933, y: 1, z: 0.2751879, w: 0}
   gain:
     m_OverrideState: 1
-    m_Value: {x: 0.44538254, y: 0.7462902, z: 1, w: 0}
+    m_Value: {x: 0.9863398, y: 1, z: 0.9257973, w: -0.2366864}
 --- !u!114 &-8270506406425502121
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -480,13 +480,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06437c1ff663d574d9447842ba0a72e4, type: 3}
   m_Name: ScreenSpaceLensFlare
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 1.5
+    m_Value: 0
   tintColor:
     m_OverrideState: 1
-    m_Value: {r: 0.7372549, g: 0.29236382, b: 0.7464138, a: 1}
+    m_Value: {r: 0.39044744, g: 0.01668743, b: 0.7075472, a: 1}
   bloomMip:
     m_OverrideState: 1
     m_Value: 1
@@ -550,13 +550,13 @@ MonoBehaviour:
   active: 1
   shadows:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 0.63651884, z: 0.6878299, w: 0}
+    m_Value: {x: 1, y: 0.5807844, z: 0.96650434, w: 0.02366864}
   midtones:
     m_OverrideState: 1
-    m_Value: {x: 0.4693585, y: 1, z: 0.9182739, w: 0}
+    m_Value: {x: 0.774979, y: 1, z: 0.9711951, w: 0.011834319}
   highlights:
     m_OverrideState: 1
-    m_Value: {x: 0.36074984, y: 0.6152073, z: 1, w: 0}
+    m_Value: {x: 0.97942257, y: 0.9590476, z: 1, w: -0.011834321}
   shadowsStart:
     m_OverrideState: 1
     m_Value: 0
@@ -855,7 +855,7 @@ MonoBehaviour:
   active: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 0.75
 --- !u!114 &6940869943325143175
 MonoBehaviour:
   m_ObjectHideFlags: 3
