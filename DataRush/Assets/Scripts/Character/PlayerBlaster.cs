@@ -7,7 +7,7 @@ public class PlayerBlaster : MonoBehaviour
     [SerializeField] public GameObject bulletPrefab;
     [SerializeField] public Transform bulletSpawnLocation;
     [Tooltip("How many times the blaster will fire each second.")]
-    [SerializeField, Range(0.1f, 5f)] public float fireRate = 1f;
+    [SerializeField, Range(0.1f, 10f)] public float fireRate = 1f;
     [SerializeField, Range(10f, 100f)] public float bulletSpeed = 20f;
 
     private float shootCooldown = 0f;

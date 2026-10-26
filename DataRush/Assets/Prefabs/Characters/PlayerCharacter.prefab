@@ -656,6 +656,8 @@ MonoBehaviour:
     value: {fileID: 8300000, guid: f60c5caff1013964690b4800566b2098, type: 3}
   - key: PowerUp
     value: {fileID: 8300000, guid: 5ac08ffd2d0a9bb4aa10f904ca9c8d18, type: 3}
+  - key: ObstacleBoom
+    value: {fileID: 8300000, guid: 0809cb55417d0d54d83a056bec3f83f6, type: 3}
   audioSource: {fileID: 3296555972534264791}
 --- !u!82 &3296555972534264791
 AudioSource:
@@ -1517,8 +1519,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 2.3146725, z: 1}
-  m_Center: {x: 0, y: 1.1395321, z: 0}
+  m_Size: {x: 1, y: 2.2335672, z: 1}
+  m_Center: {x: -0, y: 1.0989795, z: 0}
 --- !u!114 &1314010047639420085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1533,8 +1535,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerBlaster
   bulletPrefab: {fileID: 5434229867848473338, guid: e22cdfded45b3654697ba199d7234bc9, type: 3}
   bulletSpawnLocation: {fileID: 7918317202210147502}
-  fireRate: 4
-  bulletSpeed: 20
+  fireRate: 10
+  bulletSpeed: 25
 --- !u!114 &983100818443238199
 MonoBehaviour:
   m_ObjectHideFlags: 0
