@@ -13557,6 +13557,11 @@ MonoBehaviour:
   scoreText: {fileID: 1836818306}
   healthText: {fileID: 1948799504}
   gameOverPanel: {fileID: 1640282583}
+  finalScoreText: {fileID: 282195768}
+  highScoreText: {fileID: 282195767}
+  newBestText: {fileID: 282195766}
+  EndingScreen: {fileID: 187602847}
+  highScoreName: Level3
   baseMultPowerupDuration: 15
   baseInvulnPowerupDuration: 10
   baseBlasterPowerupDuration: 12
@@ -15215,6 +15220,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 67437018}
   m_LocalEulerAnglesHint: {x: 0, y: -629.999, z: 0}
+--- !u!1 &282195766 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5916557492848835119, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
+  m_PrefabInstance: {fileID: 1882837448}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &282195767 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5511586011658342964, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
+  m_PrefabInstance: {fileID: 1882837448}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!114 &282195768 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5571001069162455997, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
+  m_PrefabInstance: {fileID: 1882837448}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1001 &282341918
 PrefabInstance:
   m_ObjectHideFlags: 0
