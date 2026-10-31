@@ -1,3 +1,4 @@
+using TMPro;
 using Unity.VectorGraphics;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,9 +13,15 @@ public class GameManager : MonoBehaviour
     public Color playerColor;
     public bool canGetHit = true;
     [Header("UI Connections")]
-    public TMPro.TextMeshProUGUI scoreText; // Reference to the UI Text component
-    public TMPro.TextMeshProUGUI healthText; // Reference to the UI Text component
+    public TextMeshProUGUI scoreText; // Reference to the UI Text component
+    public TextMeshProUGUI healthText; // Reference to the UI Text component
     public GameObject gameOverPanel; // Reference to the Game Over UI panel
+    public TextMeshProUGUI finalScoreText;
+    public TextMeshProUGUI highScoreText;
+    public GameObject newBestText; // This text only gets shown if the player achieves a new high score
+    public GameObject EndingScreen;
+    [Tooltip("Name of location where high score for this level is stored. Make sure it is unique or else!!!")]
+    public string highScoreName;
 
     [Header("Powerup Settings")]
     private int scoreMultiplier = 1;
@@ -51,6 +58,7 @@ public class GameManager : MonoBehaviour
         UpdateUI();
 
         blaster = Component.FindAnyObjectByType<PlayerBlaster>(); // Get the playerblaster in the scene
+        EndingScreen.SetActive(false);
     }
 
     private void Update()
@@ -216,5 +224,28 @@ public class GameManager : MonoBehaviour
     public bool IsInvulnerable()
     {
         return invulnPowerupActive;
+    }
+
+    public void InitializeWinScreen()
+    {
+        int highScoreValue = 0;
+        finalScoreText.text = "Your Score: " + CurrentScore.ToString();
+        if (PlayerPrefs.HasKey(highScoreName)) // Check if a high score has already been set for this level
+        {
+            highScoreValue = PlayerPrefs.GetInt(highScoreName);
+        }
+
+        if (CurrentScore > highScoreValue)
+        {
+            newBestText.SetActive(true);
+            highScoreText.text = "High Score: " + CurrentScore.ToString();
+            PlayerPrefs.SetInt(highScoreName, CurrentScore); // Store new high score
+        }
+        else
+        {
+            newBestText.SetActive(false);
+            highScoreText.text = "High Score: " + highScoreValue.ToString();
+        }
+        EndingScreen.SetActive(true);
     }
 }

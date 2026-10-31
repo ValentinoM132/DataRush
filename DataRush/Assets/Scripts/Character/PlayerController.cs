@@ -6,7 +6,6 @@ public class PlayerController : MonoBehaviour
    
     public Transform targetTransform;
     private NavMeshAgent agent;
-    [SerializeField] private GameObject EndingScreen;
     [SerializeField] private GameObject[] UITurnOff;
 
     void Start()
@@ -23,7 +22,7 @@ public class PlayerController : MonoBehaviour
         }
         if (agent.remainingDistance <= agent.stoppingDistance && !agent.pathPending && targetTransform.CompareTag("End"))
         {
-            EndingScreen.SetActive(true);
+            GameManager.Instance.InitializeWinScreen();
             SoundManager.Instance.PlaySound("WinSound", .5f);
             foreach (GameObject uiElement in UITurnOff)
             {
