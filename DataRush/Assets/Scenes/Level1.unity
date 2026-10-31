@@ -24842,6 +24842,7 @@ MonoBehaviour:
   healthText: {fileID: 1104181136}
   gameOverPanel: {fileID: 1104181135}
   baseMultPowerupDuration: 15
+  Shield: {fileID: 2020884476}
   baseInvulnPowerupDuration: 10
   baseBlasterPowerupDuration: 12
   durationBars:
@@ -125995,6 +125996,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerCharacter
       objectReference: {fileID: 0}
+    - target: {fileID: 9089697720356386249, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.588342
+      objectReference: {fileID: 0}
+    - target: {fileID: 9089697720356386249, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 9089697720356386249, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.94751453
+      objectReference: {fileID: 0}
+    - target: {fileID: 9089697720356386249, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7210089
+      objectReference: {fileID: 0}
+    - target: {fileID: 9089697720356386249, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.14594257
+      objectReference: {fileID: 0}
+    - target: {fileID: 9089697720356386249, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6639181
+      objectReference: {fileID: 0}
+    - target: {fileID: 9089697720356386249, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.13438654
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -179771,6 +179800,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6783255136107983946, guid: f63c7e54e31e051439bbbfd8a5db3100, type: 3}
   m_PrefabInstance: {fileID: 2020106625}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2020884476 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6451339928805251578, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+  m_PrefabInstance: {fileID: 1407292799}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2021740331
 PrefabInstance:

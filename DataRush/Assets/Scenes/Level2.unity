@@ -15268,6 +15268,7 @@ MonoBehaviour:
   healthText: {fileID: 663075665}
   gameOverPanel: {fileID: 663075667}
   baseMultPowerupDuration: 15
+  Shield: {fileID: 596485562}
   baseInvulnPowerupDuration: 10
   baseBlasterPowerupDuration: 12
   durationBars:
@@ -31222,6 +31223,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+--- !u!1 &596485562 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6451339928805251578, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+  m_PrefabInstance: {fileID: 596485561}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &598058678
 PrefabInstance:
   m_ObjectHideFlags: 0
