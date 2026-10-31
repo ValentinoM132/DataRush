@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     private bool multPowerupActive = false;
     private float multPowerupDuration = 0f;
     [SerializeField, Range(0.5f, 30f)] public float baseMultPowerupDuration = 15f;
+    public GameObject Shield; //reference to vfx
 
     private bool invulnPowerupActive = false;
     private float invulnPowerupDuration = 0f;
@@ -81,6 +82,7 @@ public class GameManager : MonoBehaviour
                 invulnPowerupActive = false;
                 canGetHit = true;
                 durationBars[2].SetActive(false);
+                Shield.gameObject.SetActive(false);
             }
         }
         if (blasterPowerupActive) // blaster powerup timer
@@ -157,6 +159,7 @@ public class GameManager : MonoBehaviour
         invulnPowerupActive = true;
         durationBarFills[2].fillAmount = invulnPowerupDuration;
         durationBars[2].SetActive(true);
+        Shield.gameObject.SetActive(true);
     }
     // Call when player pickes up Blaster powerup
     public void BlasterPowerup()
