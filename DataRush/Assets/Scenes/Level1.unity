@@ -125988,9 +125988,37 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1104181142}
     - target: {fileID: 5021321739437444701, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+      propertyPath: soundDictionary.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5021321739437444701, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+      propertyPath: soundDictionary.Array.data[10].key
+      value: PopUpDestroy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5021321739437444701, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+      propertyPath: soundDictionary.Array.data[1].value
+      value: 
+      objectReference: {fileID: 8300000, guid: ca338a0ee9c2568498268989ca6e27ed, type: 3}
+    - target: {fileID: 5021321739437444701, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+      propertyPath: soundDictionary.Array.data[2].value
+      value: 
+      objectReference: {fileID: 8300000, guid: f679d04ab98f3424faf471ffd0f4ef01, type: 3}
+    - target: {fileID: 5021321739437444701, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
       propertyPath: soundDictionary.Array.data[4].value
       value: 
       objectReference: {fileID: 8300000, guid: 3c881c5d08dd9e448bbc5dd236d14e84, type: 3}
+    - target: {fileID: 5021321739437444701, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+      propertyPath: soundDictionary.Array.data[5].value
+      value: 
+      objectReference: {fileID: 8300000, guid: 16f1468ec4c14c04f8b5a64d86a42fd9, type: 3}
+    - target: {fileID: 5021321739437444701, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+      propertyPath: soundDictionary.Array.data[8].value
+      value: 
+      objectReference: {fileID: 8300000, guid: 3e4424db75e50b44c89f12044e81dd32, type: 3}
+    - target: {fileID: 5021321739437444701, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+      propertyPath: soundDictionary.Array.data[10].value
+      value: 
+      objectReference: {fileID: 8300000, guid: 8678621dfd109624a8da21dee7412fbc, type: 3}
     - target: {fileID: 6536303372366485025, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
       propertyPath: m_Name
       value: PlayerCharacter
