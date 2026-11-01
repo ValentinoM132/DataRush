@@ -20,6 +20,7 @@ public class TrickingMinigame : MonoBehaviour
     public GameObject comboPrefab;
     public Sprite[] comboImage = new Sprite[3];
     public Animator animator;
+    public int currentIndex;
     [SerializeField]private AnimationClip[] clips;
     void Start()
     {
@@ -97,15 +98,17 @@ public class TrickingMinigame : MonoBehaviour
     }
     private IEnumerator PlayRandomly()
     {
-            if (clips.Length > 0)
+        int randIndex = Random.Range(0, clips.Length);
+        if (clips.Length > 0 && randIndex != currentIndex)
             {
-                int randIndex = Random.Range(0, clips.Length);
+                currentIndex = randIndex;
                 AnimationClip randClip = clips[randIndex];
                 animator.Play(randClip.name);
             }
             else
             {
-                yield return null;
+                StartCoroutine(PlayRandomly()); // Recursively call until a different clip is found
+            yield return null;
             }
     }
     private bool IsOverlapping(RectTransform a, RectTransform b)
