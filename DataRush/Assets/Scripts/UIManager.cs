@@ -10,7 +10,7 @@ public class UIManager : MonoBehaviour
     public GameObject mainMenu;
     public GameObject levelSelectMenu;
     public AudioClip menuClick;
-    public GameObject menuClose;
+    public AudioClip menuClose;
     public AudioClip ThunderSound;
     public GameObject Camera;
 
@@ -29,7 +29,7 @@ public class UIManager : MonoBehaviour
             string keyName = "Level" + (i + 1).ToString(); // Keys for main levels should be Level1, Level2, etc.
             if (PlayerPrefs.HasKey(keyName))
             {
-                highScoreDisplays[i].text = "High Score: " + PlayerPrefs.GetInt(keyName).ToString();
+                highScoreDisplays[i].text = PlayerPrefs.GetInt(keyName).ToString(); //I got rid of the high score text cause it was too big
                 highScoreDisplays[i].color = Color.gold;
             }
         }
@@ -49,11 +49,19 @@ public class UIManager : MonoBehaviour
     {
         Camera.GetComponent<AudioSource>().volume = .5f;
         Camera.GetComponent<AudioSource>().PlayOneShot(menuClick);
+    
     }
+
+    public void MenuClose()
+    {
+        Camera.GetComponent<AudioSource>().volume = .75f;
+        Camera.GetComponent<AudioSource>().PlayOneShot(menuClose);
+    }
+
     public void BackButton()
     {
         Camera.GetComponent<AudioSource>().volume = .5f;
-        Camera.GetComponent<AudioSource>().PlayOneShot(menuClick);
+        Camera.GetComponent<AudioSource>().PlayOneShot(menuClose);
         mainMenu.SetActive(true);
         levelSelectMenu.SetActive(false);
     }

@@ -15273,7 +15273,7 @@ MonoBehaviour:
   EndingScreen: {fileID: 198816243}
   highScoreName: Level2
   baseMultPowerupDuration: 15
-  Shield: {fileID: 596485562}
+  Shield: {fileID: 0}
   baseInvulnPowerupDuration: 10
   baseBlasterPowerupDuration: 12
   durationBars:
@@ -31248,6 +31248,14 @@ PrefabInstance:
       propertyPath: layerMask.m_Bits
       value: 128
       objectReference: {fileID: 0}
+    - target: {fileID: 998606637357687305, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+      propertyPath: m_RenderPostProcessing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1745989225503580322, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+      propertyPath: m_RenderPostProcessing
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2175921915142079354, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
       propertyPath: m_LocalPosition.x
       value: -92.92
@@ -31389,11 +31397,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
---- !u!1 &596485562 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6451339928805251578, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
-  m_PrefabInstance: {fileID: 596485561}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &598058678
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -125804,7 +125807,7 @@ MonoBehaviour:
   m_IsGlobal: 1
   priority: 0
   blendDistance: 0
-  weight: 1
+  weight: 0.469
   sharedProfile: {fileID: 11400000, guid: e774a8b30868c2a4a9e1ecfd65d5c37d, type: 2}
 --- !u!4 &2072733520
 Transform:
