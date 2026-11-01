@@ -7,17 +7,25 @@ public class SettingsManager : MonoBehaviour
     public bool isMusicMuted = false;
     public bool isSoundMuted = false;
     public GameObject camera;
+    public GameObject musicMaker;
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
+        musicMaker = GameObject.FindGameObjectWithTag("Music");
     }
 
     public void ChangeisSoundMuted(bool value)
     {
         isSoundMuted = !value;
     }
+
+    public void ChangeisMusicMuted(bool value)
+    {
+        isMusicMuted = !value;
+    }
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        musicMaker = GameObject.FindGameObjectWithTag("Music");
         SoundManager.Instance.audioSource.mute = isSoundMuted;
     }
 
@@ -45,6 +53,15 @@ public class SettingsManager : MonoBehaviour
             {
                 camera.GetComponent<AudioSource>().mute = isSoundMuted;
             }
+        }
+        if (musicMaker != null && isMusicMuted)
+        {
+            musicMaker.GetComponent<AudioSource>().mute = isMusicMuted;
+        }
+
+        else if (musicMaker != null && !isMusicMuted)
+        {
+            musicMaker.GetComponent<AudioSource>().mute = isMusicMuted;
         }
     }
 }

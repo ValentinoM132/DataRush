@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -18,6 +19,8 @@ public class TrickingMinigame : MonoBehaviour
     public GameObject comboTransform;
     public GameObject comboPrefab;
     public Sprite[] comboImage = new Sprite[3];
+    public Animator animator;
+    [SerializeField]private AnimationClip[] clips;
     void Start()
     {
         hitTarget.transform.localPosition = new Vector2(Random.Range(-320, 320), hitTarget.transform.localPosition.y);
@@ -61,6 +64,7 @@ public class TrickingMinigame : MonoBehaviour
                         Combo.GetComponent<ImageFloatUp>().sprite = comboImage[2];
                     }
                         comboCounter++;
+                    StartCoroutine(PlayRandomly());
                     speed = speed + .15f;
                     GameManager.Instance.AddScore(500);
                     SoundManager.Instance.PlaySound("TrickSuccess", trickSuccessVolume);
@@ -91,7 +95,19 @@ public class TrickingMinigame : MonoBehaviour
         
 
     }
-
+    private IEnumerator PlayRandomly()
+    {
+            if (clips.Length > 0)
+            {
+                int randIndex = Random.Range(0, clips.Length);
+                AnimationClip randClip = clips[randIndex];
+                animator.Play(randClip.name);
+            }
+            else
+            {
+                yield return null;
+            }
+    }
     private bool IsOverlapping(RectTransform a, RectTransform b)
     {
         // Convert RectTransform boundaries to screen-space Rects

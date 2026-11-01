@@ -59,6 +59,7 @@ public class TrickRamp : MonoBehaviour
         yield return new WaitForSeconds(1f);
         
         trickGame.SetActive(false);
+        trickGame.GetComponentInChildren<TrickingMinigame>().animator.CrossFadeInFixedTime("Cyberwolf Idle", 0.1f); //reset the trick game to its initial state
         trickCam.SetActive(false); //cameras go back to normal
         followCam.SetActive(true);
         shouldCatch = true;

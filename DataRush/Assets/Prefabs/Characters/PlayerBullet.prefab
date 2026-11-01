@@ -71,7 +71,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0e7b9989421e8c04293511587e3cfc0b, type: 2}
+  - {fileID: 2100000, guid: 8b3d4072ed5f90443906071a298e6ed0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -188,7 +188,15 @@ PrefabInstance:
     m_TransformParent: {fileID: 4198662628334408962}
     m_Modifications:
     - target: {fileID: 955653985635332907, guid: 81bb78f2e3b04f343b8a369b18edfc23, type: 3}
-      propertyPath: moveWithTransform
+      propertyPath: ShapeModule.type
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 955653985635332907, guid: 81bb78f2e3b04f343b8a369b18edfc23, type: 3}
+      propertyPath: ShapeModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 955653985635332907, guid: 81bb78f2e3b04f343b8a369b18edfc23, type: 3}
+      propertyPath: ShapeModule.radiusThickness
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2712468185860643332, guid: 81bb78f2e3b04f343b8a369b18edfc23, type: 3}
@@ -197,27 +205,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2712468185860643332, guid: 81bb78f2e3b04f343b8a369b18edfc23, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341420667683457350, guid: 81bb78f2e3b04f343b8a369b18edfc23, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4938320184911744045, guid: 81bb78f2e3b04f343b8a369b18edfc23, type: 3}
+      propertyPath: ShapeModule.type
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4938320184911744045, guid: 81bb78f2e3b04f343b8a369b18edfc23, type: 3}
+      propertyPath: ShapeModule.enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4938320184911744045, guid: 81bb78f2e3b04f343b8a369b18edfc23, type: 3}
-      propertyPath: moveWithTransform
+      propertyPath: ShapeModule.radiusThickness
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4938320184911744045, guid: 81bb78f2e3b04f343b8a369b18edfc23, type: 3}
-      propertyPath: InitialModule.startSize.scalar
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7992795004307317540, guid: 81bb78f2e3b04f343b8a369b18edfc23, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.04521346
-      objectReference: {fileID: 0}
-    - target: {fileID: 7992795004307317540, guid: 81bb78f2e3b04f343b8a369b18edfc23, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.04484468
-      objectReference: {fileID: 0}
-    - target: {fileID: 7992795004307317540, guid: 81bb78f2e3b04f343b8a369b18edfc23, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.13969
       objectReference: {fileID: 0}
     - target: {fileID: 7992795004307317540, guid: 81bb78f2e3b04f343b8a369b18edfc23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -233,11 +237,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7992795004307317540, guid: 81bb78f2e3b04f343b8a369b18edfc23, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.0000029504295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7992795004307317540, guid: 81bb78f2e3b04f343b8a369b18edfc23, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7992795004307317540, guid: 81bb78f2e3b04f343b8a369b18edfc23, type: 3}
       propertyPath: m_LocalRotation.y
@@ -245,7 +249,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7992795004307317540, guid: 81bb78f2e3b04f343b8a369b18edfc23, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7992795004307317540, guid: 81bb78f2e3b04f343b8a369b18edfc23, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
