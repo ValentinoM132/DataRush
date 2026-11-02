@@ -3985,6 +3985,7 @@ MonoBehaviour:
   - {fileID: -5339466008653722315, guid: 20355dcc87404244d8f8d855b3a26009, type: 3}
   - {fileID: -283756630952673200, guid: 2a1f133a8dae8f84c8473a4c71d78a6f, type: 3}
   animator: {fileID: 0}
+  currentIndex: 0
   clips:
   - {fileID: 1827226128182048838, guid: eaa5dea1afbe46a4f80501258a87c0df, type: 3}
   - {fileID: 1827226128182048838, guid: c726c921d772ea04997ba995c3d32bd3, type: 3}
@@ -4489,10 +4490,6 @@ PrefabInstance:
     - target: {fileID: 6014926007203819586, guid: ddb38cf5e7aa7f741a3385169adc399f, type: 3}
       propertyPath: m_Name
       value: PopUps
-      objectReference: {fileID: 0}
-    - target: {fileID: 6014926007203819586, guid: ddb38cf5e7aa7f741a3385169adc399f, type: 3}
-      propertyPath: m_TagString
-      value: popUp
       objectReference: {fileID: 0}
     - target: {fileID: 6022301730321084585, guid: ddb38cf5e7aa7f741a3385169adc399f, type: 3}
       propertyPath: m_SizeDelta.y

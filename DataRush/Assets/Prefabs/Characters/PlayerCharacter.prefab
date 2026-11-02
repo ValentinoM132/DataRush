@@ -641,23 +641,27 @@ MonoBehaviour:
   - key: CoinPickup
     value: {fileID: 8300000, guid: b198ef4cf97161943a282bdbf199c454, type: 3}
   - key: TrickSuccess
-    value: {fileID: 8300000, guid: 442c474f64d11de458dace5eada848ef, type: 3}
+    value: {fileID: 8300000, guid: ca338a0ee9c2568498268989ca6e27ed, type: 3}
   - key: TrickFailure
-    value: {fileID: 8300000, guid: 0d1861e8c73d0214d81203d1183566df, type: 3}
+    value: {fileID: 8300000, guid: f679d04ab98f3424faf471ffd0f4ef01, type: 3}
   - key: CharacterDamage
     value: {fileID: 8300000, guid: db9ba4ea0e80297418314a41f8b502d3, type: 3}
   - key: WinSound
     value: {fileID: 8300000, guid: 3c881c5d08dd9e448bbc5dd236d14e84, type: 3}
   - key: GameOver
-    value: {fileID: 8300000, guid: e45955ff253063846ba64b44e0ef990e, type: 3}
+    value: {fileID: 8300000, guid: 16f1468ec4c14c04f8b5a64d86a42fd9, type: 3}
   - key: MenuClick
     value: {fileID: 8300000, guid: 59e75b30ea373884ca15512b030cc65a, type: 3}
   - key: PopUpAd
     value: {fileID: 8300000, guid: f60c5caff1013964690b4800566b2098, type: 3}
   - key: PowerUp
-    value: {fileID: 8300000, guid: 5ac08ffd2d0a9bb4aa10f904ca9c8d18, type: 3}
+    value: {fileID: 8300000, guid: b5a76b99c37b8f044b83b5104d606f26, type: 3}
   - key: ObstacleBoom
     value: {fileID: 8300000, guid: 0809cb55417d0d54d83a056bec3f83f6, type: 3}
+  - key: PlayerShoot
+    value: {fileID: 8300000, guid: 6ca42a9c84d617243853d8171e629e61, type: 3}
+  - key: PopUpDestroy
+    value: {fileID: 8300000, guid: 8678621dfd109624a8da21dee7412fbc, type: 3}
   audioSource: {fileID: 3296555972534264791}
 --- !u!82 &3296555972534264791
 AudioSource:
@@ -1172,8 +1176,8 @@ NavMeshAgent:
   m_Speed: 14.1
   m_Acceleration: 23.9
   avoidancePriority: 50
-  m_AngularSpeed: 37.3
-  m_StoppingDistance: 0
+  m_AngularSpeed: 60
+  m_StoppingDistance: 1
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1

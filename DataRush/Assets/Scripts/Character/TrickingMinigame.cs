@@ -25,7 +25,6 @@ public class TrickingMinigame : MonoBehaviour
     void Start()
     {
         hitTarget.transform.localPosition = new Vector2(Random.Range(-320, 320), hitTarget.transform.localPosition.y);
-        
     }
 
     private void OnEnable()
@@ -33,6 +32,7 @@ public class TrickingMinigame : MonoBehaviour
         EnhancedTouchSupport.Enable(); // Must be enabled for Touch.activeTouches to work
         comboCounter = 0;
         speed = 0.75f;
+        animator.SetTrigger("StartTrick");
     }
 
     private void OnDisable()
@@ -75,6 +75,7 @@ public class TrickingMinigame : MonoBehaviour
                 {
                     
                     comboCounter = 0;
+                    animator.SetTrigger("Failure");
                     GameObject Combo = Instantiate(comboPrefab, comboTransform.transform);
                     Combo.gameObject.transform.SetParent(comboTransform.transform, false);
                     Combo.GetComponent<ImageFloatUp>().sprite = comboImage[0];
@@ -98,7 +99,7 @@ public class TrickingMinigame : MonoBehaviour
     }
     private IEnumerator PlayRandomly()
     {
-        int randIndex = Random.Range(0, clips.Length);
+        int randIndex = Random.Range(2, clips.Length);
         if (clips.Length > 0 && randIndex != currentIndex)
             {
                 currentIndex = randIndex;

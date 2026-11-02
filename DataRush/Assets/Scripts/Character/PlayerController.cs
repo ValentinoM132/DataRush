@@ -3,14 +3,14 @@ using UnityEngine.AI;
 
 public class PlayerController : MonoBehaviour
 {
-   
+
     public Transform targetTransform;
     private NavMeshAgent agent;
     [SerializeField] private GameObject[] UITurnOff;
 
     void Start()
     {
-       
+
         agent = GetComponent<NavMeshAgent>();
     }
 
@@ -22,14 +22,19 @@ public class PlayerController : MonoBehaviour
         }
         if (agent.remainingDistance <= agent.stoppingDistance && !agent.pathPending && targetTransform.CompareTag("End"))
         {
-            GameManager.Instance.InitializeWinScreen();
-            SoundManager.Instance.PlaySound("WinSound", .5f);
-            foreach (GameObject uiElement in UITurnOff)
+            EndLevel();
+        }
+    }
+
+    void EndLevel()
+    {
+        GameManager.Instance.InitializeWinScreen();
+        SoundManager.Instance.PlaySound("WinSound", .5f);
+        foreach (GameObject uiElement in UITurnOff)
+        {
+            if (uiElement != null && uiElement.activeSelf)
             {
-                if (uiElement != null && uiElement.activeSelf)
-                {
-                    uiElement.SetActive(false);
-                }
+                uiElement.SetActive(false);
             }
         }
     }

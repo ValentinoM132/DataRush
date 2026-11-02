@@ -588,13 +588,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1882837449}
     - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: vfxToDisable.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: 'vfxToDisable.Array.data[0]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 269230690}
     - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: 'vfxToDisable.Array.data[1]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1448786043}
+    - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: 'vfxToDisable.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1976427315}
     - target: {fileID: 8134735932121727402, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: m_Name
       value: Ramp Placeholder (2)
@@ -13898,6 +13906,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6783255136107983946, guid: f63c7e54e31e051439bbbfd8a5db3100, type: 3}
   m_PrefabInstance: {fileID: 268536333}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &269230690 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4591616845951708812, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+  m_PrefabInstance: {fileID: 1407292799}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &271769003
 GameObject:
@@ -30937,13 +30950,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1882837449}
     - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: vfxToDisable.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: 'vfxToDisable.Array.data[0]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 269230690}
     - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: 'vfxToDisable.Array.data[1]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1448786043}
+    - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: 'vfxToDisable.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1976427315}
     - target: {fileID: 8134735932121727402, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: m_Name
       value: Ramp Placeholder (1)
@@ -57319,16 +57340,20 @@ PrefabInstance:
       objectReference: {fileID: 1882837449}
     - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: vfxToDisable.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: 'vfxToDisable.Array.data[0]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 269230690}
     - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: 'vfxToDisable.Array.data[1]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1448786043}
+    - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: 'vfxToDisable.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1976427315}
     - target: {fileID: 8134735932121727402, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: m_Name
       value: Ramp Placeholder (7)
@@ -85131,13 +85156,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1882837449}
     - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: vfxToDisable.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: 'vfxToDisable.Array.data[0]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 269230690}
     - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: 'vfxToDisable.Array.data[1]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1448786043}
+    - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: 'vfxToDisable.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1976427315}
     - target: {fileID: 8134735932121727402, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: m_Name
       value: Ramp Placeholder (4)
@@ -86212,13 +86245,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1882837449}
     - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: vfxToDisable.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: 'vfxToDisable.Array.data[0]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 269230690}
     - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: 'vfxToDisable.Array.data[1]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1448786043}
+    - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: 'vfxToDisable.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1976427315}
     - target: {fileID: 8134735932121727402, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: m_Name
       value: Ramp Placeholder (5)
@@ -96089,45 +96130,17 @@ PrefabInstance:
       propertyPath: 'UITurnOff.Array.data[6]'
       value: 
       objectReference: {fileID: 1882837451}
-    - target: {fileID: 5021321739437444701, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
-      propertyPath: soundDictionary.Array.size
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 5021321739437444701, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
-      propertyPath: soundDictionary.Array.data[10].key
-      value: PlayerShoot
-      objectReference: {fileID: 0}
-    - target: {fileID: 5021321739437444701, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
-      propertyPath: soundDictionary.Array.data[11].key
-      value: PopUpDestroy
-      objectReference: {fileID: 0}
-    - target: {fileID: 5021321739437444701, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
-      propertyPath: soundDictionary.Array.data[1].value
-      value: 
-      objectReference: {fileID: 8300000, guid: ca338a0ee9c2568498268989ca6e27ed, type: 3}
-    - target: {fileID: 5021321739437444701, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
-      propertyPath: soundDictionary.Array.data[2].value
-      value: 
-      objectReference: {fileID: 8300000, guid: f679d04ab98f3424faf471ffd0f4ef01, type: 3}
-    - target: {fileID: 5021321739437444701, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
-      propertyPath: soundDictionary.Array.data[5].value
-      value: 
-      objectReference: {fileID: 8300000, guid: 16f1468ec4c14c04f8b5a64d86a42fd9, type: 3}
-    - target: {fileID: 5021321739437444701, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
-      propertyPath: soundDictionary.Array.data[8].value
-      value: 
-      objectReference: {fileID: 8300000, guid: b5a76b99c37b8f044b83b5104d606f26, type: 3}
-    - target: {fileID: 5021321739437444701, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
-      propertyPath: soundDictionary.Array.data[10].value
-      value: 
-      objectReference: {fileID: 8300000, guid: 6ca42a9c84d617243853d8171e629e61, type: 3}
-    - target: {fileID: 5021321739437444701, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
-      propertyPath: soundDictionary.Array.data[11].value
-      value: 
-      objectReference: {fileID: 8300000, guid: 8678621dfd109624a8da21dee7412fbc, type: 3}
     - target: {fileID: 6536303372366485025, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
       propertyPath: m_Name
       value: PlayerCharacter
+      objectReference: {fileID: 0}
+    - target: {fileID: 7444688643046954382, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 8968466840208937035, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -98408,6 +98421,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6783255136107983946, guid: f63c7e54e31e051439bbbfd8a5db3100, type: 3}
   m_PrefabInstance: {fileID: 1443730528}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1448786043 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3931560943141526809, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+  m_PrefabInstance: {fileID: 1407292799}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1449147480
 GameObject:
@@ -128761,13 +128779,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1882837449}
     - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: vfxToDisable.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: 'vfxToDisable.Array.data[0]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 269230690}
     - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: 'vfxToDisable.Array.data[1]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1448786043}
+    - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: 'vfxToDisable.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1976427315}
     - target: {fileID: 8134735932121727402, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: m_Name
       value: Ramp Placeholder (6)
@@ -131314,6 +131340,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4557945733284557010, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6433856700164163705, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
       propertyPath: m_Name
       value: HUD
@@ -131922,13 +131952,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1882837449}
     - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: vfxToDisable.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: 'vfxToDisable.Array.data[0]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 269230690}
     - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: 'vfxToDisable.Array.data[1]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1448786043}
+    - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: 'vfxToDisable.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1976427315}
     - target: {fileID: 8134735932121727402, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: m_Name
       value: Ramp Placeholder (3)
@@ -136568,6 +136606,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 67437018}
   m_LocalEulerAnglesHint: {x: -45, y: -90, z: 0}
+--- !u!1 &1976427315 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6855689777111314652, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+  m_PrefabInstance: {fileID: 1407292799}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1976630057
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -148842,16 +148885,20 @@ PrefabInstance:
       objectReference: {fileID: 1882837449}
     - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: vfxToDisable.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: 'vfxToDisable.Array.data[0]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 269230690}
     - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: 'vfxToDisable.Array.data[1]'
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1448786043}
+    - target: {fileID: 5470907282407816900, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
+      propertyPath: 'vfxToDisable.Array.data[2]'
+      value: 
+      objectReference: {fileID: 1976427315}
     - target: {fileID: 8134735932121727402, guid: c01676d0c35966a4cb13e3492a71de32, type: 3}
       propertyPath: m_Name
       value: Ramp Placeholder
