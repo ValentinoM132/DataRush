@@ -45187,8 +45187,8 @@ MonoBehaviour:
   m_IsGlobal: 1
   priority: 0
   blendDistance: 0
-  weight: 0.185
-  sharedProfile: {fileID: 11400000, guid: e774a8b30868c2a4a9e1ecfd65d5c37d, type: 2}
+  weight: 0.215
+  sharedProfile: {fileID: 11400000, guid: 0f3826f17d7686649ba07c48c4543453, type: 2}
 --- !u!4 &668538750
 Transform:
   m_ObjectHideFlags: 0
@@ -96045,6 +96045,10 @@ PrefabInstance:
     - target: {fileID: 998606637357687305, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
       propertyPath: m_RenderPostProcessing
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1745989225503580322, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+      propertyPath: m_RenderPostProcessing
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2175921915142079354, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
       propertyPath: m_LocalPosition.x
