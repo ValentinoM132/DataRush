@@ -834,6 +834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Obstacle
   audioVolume: 1
+  canBeShot: 0
 --- !u!1 &1998908281250300477
 GameObject:
   m_ObjectHideFlags: 0
@@ -10376,6 +10377,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Obstacle
   audioVolume: 1
+  canBeShot: 1
 --- !u!1 &9173246844176115826
 GameObject:
   m_ObjectHideFlags: 0
@@ -11210,3 +11212,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Obstacle
   audioVolume: 1
+  canBeShot: 0
