@@ -15,13 +15,13 @@ MonoBehaviour:
   active: 1
   lift:
     m_OverrideState: 1
-    m_Value: {x: 0.60457504, y: 0, z: 1, w: -0.041807376}
+    m_Value: {x: 0.5616508, y: 0.29991585, z: 1, w: -0.11328535}
   gamma:
     m_OverrideState: 1
-    m_Value: {x: 0.61457497, y: 1, z: 0.7211319, w: -0.32955715}
+    m_Value: {x: 1, y: 0.6084235, z: 0.54987514, w: 0.17507723}
   gain:
     m_OverrideState: 1
-    m_Value: {x: 0, y: 1, z: 0.00041776896, w: 0.16477862}
+    m_Value: {x: 0.9826871, y: 1, z: 0.30602574, w: 0.15447997}
 --- !u!114 &-4878933045771923637
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -78,7 +78,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
-  m_Name: Global Volume Profile
+  m_Name: GV_Level2
   m_EditorClassIdentifier: Unity.RenderPipelines.Core.Runtime::UnityEngine.Rendering.VolumeProfile
   components:
   - {fileID: -4878933045771923637}
@@ -102,7 +102,7 @@ MonoBehaviour:
   active: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 0.75
+    m_Value: 0.8
 --- !u!114 &8401100473845632818
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -158,13 +158,13 @@ MonoBehaviour:
   active: 1
   shadows:
     m_OverrideState: 1
-    m_Value: {x: 0.61048305, y: 0, z: 1, w: 0.32131997}
+    m_Value: {x: 0.5635155, y: 0.42650306, z: 1, w: 0.012360072}
   midtones:
     m_OverrideState: 1
-    m_Value: {x: 0, y: 1, z: 0.16184187, w: 0.09268794}
+    m_Value: {x: 1, y: 0.55957264, z: 0.9176819, w: 0.46343973}
   highlights:
     m_OverrideState: 1
-    m_Value: {x: 0, y: 1, z: 0.08506006, w: 0}
+    m_Value: {x: 1, y: 0.3108126, z: 0.3220064, w: -0.010298662}
   shadowsStart:
     m_OverrideState: 0
     m_Value: 0
@@ -195,13 +195,13 @@ MonoBehaviour:
     m_Value: -0.53
   contrast:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 39
   colorFilter:
     m_OverrideState: 1
-    m_Value: {r: 0.109803915, g: 1, b: 0.7473304, a: 1}
+    m_Value: {r: 0.20754719, g: 0.00489498, b: 0.00489498, a: 1}
   hueShift:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 79
   saturation:
     m_OverrideState: 1
-    m_Value: 17
+    m_Value: 50
