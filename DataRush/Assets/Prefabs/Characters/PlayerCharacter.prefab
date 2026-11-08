@@ -1171,7 +1171,7 @@ NavMeshAgent:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7068721887796214762}
   m_Enabled: 1
-  m_AgentTypeID: 0
+  m_AgentTypeID: -1372625422
   m_Radius: 0.75
   m_Speed: 14.1
   m_Acceleration: 23.9
@@ -1234,9 +1234,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b60fb93214138e4d85850e0491df82a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BetterPlayerController
-  moveSpeed: 5
+  moveSpeed: 3.46
   raycastShootOut: {fileID: 5568033620441826895}
   turnSpeed: 20
+  raycastMinimum: 0.01
   layerMask:
     serializedVersion: 2
     m_Bits: 128

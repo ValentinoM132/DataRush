@@ -6376,7 +6376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshSurface
   m_SerializedVersion: 0
-  m_AgentTypeID: 0
+  m_AgentTypeID: -1372625422
   m_CollectObjects: 2
   m_Size: {x: 10, y: 10, z: 10}
   m_Center: {x: 0, y: 2, z: 0}
@@ -6391,7 +6391,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.13333334
+  m_VoxelSize: 0.026666665
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 7a278896400cc4348acb1f3f7fe13383, type: 2}
   m_BuildHeightMesh: 0
@@ -19616,13 +19616,15 @@ MonoBehaviour:
   playerColor: {r: 0, g: 0, b: 0, a: 0}
   canGetHit: 1
   scoreText: {fileID: 1104181137}
-  healthText: {fileID: 1104181136}
   gameOverPanel: {fileID: 1104181135}
   finalScoreText: {fileID: 1393615057}
   highScoreText: {fileID: 906822267}
   newBestText: {fileID: 477429940}
   EndingScreen: {fileID: 142069224}
   highScoreName: Level4
+  Playerhurt: 0
+  PlayerDead: 0
+  regenDelay: 5
   baseMultPowerupDuration: 15
   Shield: {fileID: 899519541}
   baseInvulnPowerupDuration: 10
@@ -19635,6 +19637,10 @@ MonoBehaviour:
   - {fileID: 1104181139}
   - {fileID: 1104181138}
   - {fileID: 1104181134}
+  Firewalls:
+  - {fileID: -6877820614830844790, guid: c39620ceede1b794db460750978c8d01, type: 3}
+  - {fileID: 8935857428104705336, guid: 2d797cc5322ed804c862467e35553567, type: 3}
+  - {fileID: -3744470206668486953, guid: 1b58c196d28ffc94eb3f1f4ac28f2ea8, type: 3}
 --- !u!4 &258091991
 Transform:
   m_ObjectHideFlags: 0
@@ -81129,6 +81135,10 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 1622281219}
+    - target: {fileID: 7841897602093770126, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8671548030754803021, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
       propertyPath: Player
       value: 
@@ -81158,17 +81168,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8965918438075705453, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
   m_PrefabInstance: {fileID: 1104181133}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1104181136 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4035176959583348474, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
-  m_PrefabInstance: {fileID: 1104181133}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!114 &1104181137 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 509674888809734406, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
@@ -99077,6 +99076,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 998606637357687305, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+      propertyPath: m_RenderPostProcessing
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1745989225503580322, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
       propertyPath: m_RenderPostProcessing
       value: 0
@@ -99205,6 +99208,10 @@ PrefabInstance:
       propertyPath: soundDictionary.Array.data[11].value
       value: 
       objectReference: {fileID: 8300000, guid: 6ca42a9c84d617243853d8171e629e61, type: 3}
+    - target: {fileID: 6257873472089257112, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+      propertyPath: m_RenderPostProcessing
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6536303372366485025, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
       propertyPath: m_Name
       value: PlayerCharacter
