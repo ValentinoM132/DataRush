@@ -248,8 +248,13 @@ public class GameManager : MonoBehaviour
 
     public void InitializeWinScreen()
     {
+        if (EndingScreen.activeSelf) // Don't repeat this if the end screen is already active!
+        {
+            return;
+        }
+
         int highScoreValue = 0;
-        finalScoreText.text = "Your Score: " + CurrentScore.ToString();
+        finalScoreText.text = "Your Score:   " + CurrentScore.ToString();
         if (PlayerPrefs.HasKey(highScoreName)) // Check if a high score has already been set for this level
         {
             highScoreValue = PlayerPrefs.GetInt(highScoreName);
@@ -258,13 +263,13 @@ public class GameManager : MonoBehaviour
         if (CurrentScore > highScoreValue)
         {
             newBestText.SetActive(true);
-            highScoreText.text = "High Score: " + CurrentScore.ToString();
+            highScoreText.text = "High Score:   " + CurrentScore.ToString();
             PlayerPrefs.SetInt(highScoreName, CurrentScore); // Store new high score
         }
         else
         {
             newBestText.SetActive(false);
-            highScoreText.text = "High Score: " + highScoreValue.ToString();
+            highScoreText.text = "High Score:   " + highScoreValue.ToString();
         }
         EndingScreen.SetActive(true);
     }

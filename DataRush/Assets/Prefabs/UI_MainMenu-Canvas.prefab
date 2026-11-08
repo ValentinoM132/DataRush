@@ -1100,9 +1100,11 @@ MonoBehaviour:
   mainMenu: {fileID: 2575823164623550539}
   levelSelectMenu: {fileID: 1705853348803268458}
   menuClick: {fileID: 8300000, guid: 59e75b30ea373884ca15512b030cc65a, type: 3}
-  menuClose: {fileID: 2575823164623550539}
+  menuClose: {fileID: 8300000, guid: a22357d912612234f9eadd516e7cea16, type: 3}
   ThunderSound: {fileID: 8300000, guid: a8a1220a6eac05d4bb2cb3df6062a205, type: 3}
   Camera: {fileID: 0}
+  highScoreDisplays: []
+  levelButtons: []
 --- !u!1 &4117516409689339203
 GameObject:
   m_ObjectHideFlags: 0

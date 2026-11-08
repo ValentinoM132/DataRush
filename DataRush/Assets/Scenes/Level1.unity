@@ -103409,6 +103409,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HUD
       objectReference: {fileID: 0}
+    - target: {fileID: 6433856700164163705, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6588848865976030200, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -103489,9 +103493,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7542531093967415131, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
+      propertyPath: level
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7841897602093770126, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 63.364502
       objectReference: {fileID: 0}
     - target: {fileID: 8671548030754803021, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
       propertyPath: Player

@@ -81135,6 +81135,10 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 1622281219}
+    - target: {fileID: 7542531093967415131, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
+      propertyPath: level
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7841897602093770126, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
