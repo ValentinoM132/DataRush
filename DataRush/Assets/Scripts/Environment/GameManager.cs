@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using Unity.VectorGraphics;
 using UnityEngine;
@@ -7,14 +8,12 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
     public int CurrentScore { get; set; } = 0;
-    public int PlayerHealth { get; set; } = 5;
     [Header("Player Settings")]
     public Material playerMaterial; // Reference to the player's material
     public Color playerColor;
     public bool canGetHit = true;
     [Header("UI Connections")]
     public TextMeshProUGUI scoreText; // Reference to the UI Text component
-    public TextMeshProUGUI healthText; // Reference to the UI Text component
     public GameObject gameOverPanel; // Reference to the Game Over UI panel
     public TextMeshProUGUI finalScoreText;
     public TextMeshProUGUI highScoreText;
@@ -22,6 +21,10 @@ public class GameManager : MonoBehaviour
     public GameObject EndingScreen;
     [Tooltip("Name of location where high score for this level is stored. Make sure it is unique or else!!!")]
     public string highScoreName;
+    public bool Playerhurt = false;
+    public bool PlayerDead = false;
+
+    [SerializeField] private float regenDelay = 5f; // Delay before health regeneration starts
 
     [Header("Powerup Settings")]
     private int scoreMultiplier = 1;
@@ -42,6 +45,7 @@ public class GameManager : MonoBehaviour
     [Header("Powerup UI Connections")]
     [SerializeField] public GameObject[] durationBars; // 0 = Mult, 1 = Blaster, 2 = Invuln
     [SerializeField] public Image[] durationBarFills;
+    public Sprite[] Firewalls;
 
 
 
@@ -63,7 +67,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (PlayerHealth <= 0)
+        if (PlayerDead)
         {
             Time.timeScale = 0; // Pause the game
             gameOverPanel.SetActive(true); // Show the Game Over UI panel
@@ -128,23 +132,39 @@ public class GameManager : MonoBehaviour
     {
         scoreText.text = CurrentScore.ToString();
 
-        healthText.text = "Health: " + PlayerHealth.ToString();
     }
 
     public void ReduceHealth(int damage)
     {
-        if (canGetHit)
+        if (canGetHit && Playerhurt == false)
         {
             SoundManager.Instance.PlaySound("CharacterDamage", 1f);
-            PlayerHealth -= damage;
+            Playerhurt = true;
             UpdateUI();
             canGetHit = false;
             playerMaterial.color = Color.red; // Change the player's material color to red
+            StartCoroutine(HealCoroutine());
             Invoke("ResetCanGetHit", 1f); // Adjust the delay as needed
 
         }
+        else if (canGetHit && Playerhurt == true)
+        {
+            PlayerDead = true;
+        }
     }
-
+    private IEnumerator HealCoroutine()
+    {
+        Image damageAura = GameObject.FindGameObjectWithTag("DamageAura").GetComponent<Image>();
+        damageAura.enabled = true; // Enable the damage aura
+        damageAura.sprite = Firewalls[0];
+        yield return new WaitForSeconds(regenDelay/3); // Wait for 1/3 of the regenDelay
+        damageAura.sprite = Firewalls[1];
+        yield return new WaitForSeconds(regenDelay/3); // Wait for 1/3 of the regenDelay
+        damageAura.sprite = Firewalls[2];
+        yield return new WaitForSeconds(regenDelay/3); // Wait for 1/3 of the regenDelay
+        damageAura.enabled = false; // Disable the damage aura
+        Playerhurt = false; // Reset the Playerhurt flag
+    }
     private void ResetCanGetHit()
     {
         canGetHit = true;

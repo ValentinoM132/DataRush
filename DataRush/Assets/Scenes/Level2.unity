@@ -3762,13 +3762,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshSurface
   m_SerializedVersion: 0
-  m_AgentTypeID: 0
+  m_AgentTypeID: -1372625422
   m_CollectObjects: 2
   m_Size: {x: 10, y: 10, z: 10}
   m_Center: {x: 0, y: 2, z: 0}
   m_LayerMask:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 183
   m_UseGeometry: 0
   m_DefaultArea: 0
   m_GenerateLinks: 0
@@ -3777,7 +3777,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.13333334
+  m_VoxelSize: 0.026666665
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 202d30b1f170bd14887c0ede41ce2aaa, type: 2}
   m_BuildHeightMesh: 0
@@ -15335,13 +15335,15 @@ MonoBehaviour:
   playerColor: {r: 0.37307048, g: 0.18316127, b: 0.7924528, a: 0}
   canGetHit: 1
   scoreText: {fileID: 663075666}
-  healthText: {fileID: 663075665}
   gameOverPanel: {fileID: 663075667}
   finalScoreText: {fileID: 1320411768}
   highScoreText: {fileID: 1320411767}
   newBestText: {fileID: 1320411766}
   EndingScreen: {fileID: 198816243}
   highScoreName: Level2
+  Playerhurt: 0
+  PlayerDead: 0
+  regenDelay: 5
   baseMultPowerupDuration: 15
   Shield: {fileID: 1002978203}
   baseInvulnPowerupDuration: 10
@@ -15354,6 +15356,10 @@ MonoBehaviour:
   - {fileID: 663075668}
   - {fileID: 663075670}
   - {fileID: 663075672}
+  Firewalls:
+  - {fileID: -6877820614830844790, guid: c39620ceede1b794db460750978c8d01, type: 3}
+  - {fileID: 8935857428104705336, guid: 2d797cc5322ed804c862467e35553567, type: 3}
+  - {fileID: -3744470206668486953, guid: 1b58c196d28ffc94eb3f1f4ac28f2ea8, type: 3}
 --- !u!4 &258091991
 Transform:
   m_ObjectHideFlags: 0
@@ -34106,6 +34112,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7635006504610102315, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7841897602093770126, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7914229996538150908, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -578.8
@@ -34142,17 +34156,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8293392111190404294, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
   m_PrefabInstance: {fileID: 663075663}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &663075665 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4035176959583348474, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
-  m_PrefabInstance: {fileID: 663075663}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!114 &663075666 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 509674888809734406, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}

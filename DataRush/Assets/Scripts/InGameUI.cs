@@ -30,7 +30,8 @@ public class InGameUI : MonoBehaviour
     {         
         Time.timeScale = 1f; // Resume the game before restarting
         GameManager.Instance.CurrentScore = 0; // Reset the score
-        GameManager.Instance.PlayerHealth = 5; // Reset the player's health
+        GameManager.Instance.PlayerDead = false; // Reset the PlayerDead flag
+        GameManager.Instance.Playerhurt = false; // Reset the Playerhurt flag
         GameManager.Instance.UpdateUI(); // Update UI
         GameManager.Instance.canGetHit = true; // Reset the canGetHit flag
         GameManager.Instance.playerMaterial.color = GameManager.Instance.playerColor; // Reset the player's material color
@@ -38,3 +39,4 @@ public class InGameUI : MonoBehaviour
         
     }
 }
+

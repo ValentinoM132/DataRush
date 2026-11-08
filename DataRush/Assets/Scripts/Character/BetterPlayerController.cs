@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Rendering;
@@ -12,6 +13,7 @@ public class BetterPlayerController : MonoBehaviour
     private Vector3 movementDirection;
     public Transform raycastShootOut;
     public float turnSpeed = 20f;
+    public float raycastMinimum = .2f;
 
     public LayerMask layerMask;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -58,11 +60,19 @@ public class BetterPlayerController : MonoBehaviour
             leftDistanceVector = Vector3.zero;
         }
 
-       
+
 
         // Calculate target rotation based on movement vector
-
+        Debug.Log(movementDirection);
         movementDirection = rightDistanceVector + leftDistanceVector;
+        if(movementDirection.magnitude < raycastMinimum)
+        {
+            movementDirection = Vector3.zero;
+        }
+        else
+        {
+            movementDirection.Normalize();
+        }
         transform.Translate(movementDirection * moveSpeed * Time.deltaTime);
         Debug.DrawRay(raycastShootOut.position, -transform.right * 10f, Color.red);
         Debug.DrawRay(raycastShootOut.position, transform.right * 10f, Color.green);
