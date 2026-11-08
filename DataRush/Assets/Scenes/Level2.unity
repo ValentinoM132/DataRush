@@ -31451,6 +31451,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: f679d04ab98f3424faf471ffd0f4ef01, type: 3}
     - target: {fileID: 5021321739437444701, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+      propertyPath: soundDictionary.Array.data[4].value
+      value: 
+      objectReference: {fileID: 8300000, guid: 0a72f6c9b5c80574383085e18c404ce4, type: 3}
+    - target: {fileID: 5021321739437444701, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
       propertyPath: soundDictionary.Array.data[5].value
       value: 
       objectReference: {fileID: 8300000, guid: 16f1468ec4c14c04f8b5a64d86a42fd9, type: 3}
