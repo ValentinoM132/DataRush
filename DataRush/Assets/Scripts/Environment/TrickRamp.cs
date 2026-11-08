@@ -15,12 +15,13 @@ public class TrickRamp : MonoBehaviour
     private GameObject TrickingPlayer;
     private GameObject followCam;
     private GameObject mainHud;
-
+    private GameObject cyberwolfModel;
     public void Awake()
     {
         followCam = GameObject.FindGameObjectWithTag("FollowCam");
         playerWithNavMesh = GameObject.FindGameObjectWithTag("NavMeshCharacter");
         mainHud = GameObject.FindGameObjectWithTag("HUD");
+        cyberwolfModel = GameObject.FindGameObjectWithTag("CyberwolfModel");
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -45,6 +46,7 @@ public class TrickRamp : MonoBehaviour
         
         yield return new WaitForSeconds(0.5f); // Wait half a second before camera transition
         TrickingPlayer.transform.parent.GetComponent<RealPlayerController>().canMove = false;
+        cyberwolfModel.transform.localPosition =new Vector3 (cyberwolfModel.transform.localPosition.x,1f, cyberwolfModel.transform.localPosition.z);
         trickGame.GetComponentInChildren<TrickingMinigame>().player = TrickingPlayer ;
         followCam.SetActive(false);
         trickCam.SetActive(true);
@@ -59,6 +61,7 @@ public class TrickRamp : MonoBehaviour
         yield return new WaitForSeconds(1f);
         
         trickGame.SetActive(false);
+        trickGame.GetComponentInChildren<TrickingMinigame>().animator.CrossFadeInFixedTime("Cyberwolf Idle", 0.1f); //reset the trick game to its initial state
         trickCam.SetActive(false); //cameras go back to normal
         followCam.SetActive(true);
         shouldCatch = true;
@@ -78,6 +81,7 @@ public class TrickRamp : MonoBehaviour
         {
             shouldCatch = false;
             trickingPlayer.gameObject.transform.localPosition = new Vector3(0, -3.5f, 0); //These are the exact local coordinates the player needs to rotate well on half pipe pivot
+            cyberwolfModel.transform.localPosition = new Vector3(cyberwolfModel.transform.localPosition.x, -0.138f, cyberwolfModel.transform.localPosition.z);
             trickingPlayer.gameObject.GetComponent<Rigidbody>().linearVelocity = Vector3.zero;
             trickingPlayer.gameObject.GetComponent<Rigidbody>().useGravity = false;
             trickingPlayer.gameObject.GetComponent<Rigidbody>().mass = 0.1f;

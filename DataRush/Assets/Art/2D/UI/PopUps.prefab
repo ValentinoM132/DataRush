@@ -135,6 +135,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::buttonHealth
   mybutton: {fileID: 7910401586956531882}
   myPanel: {fileID: 8610781834417634981}
+  AdImage: {fileID: 0}
+  targetMaterial: {fileID: 0}
   currentclickcount: 3
 --- !u!1 &2437988584753019189
 GameObject:
@@ -271,6 +273,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::buttonHealth
   mybutton: {fileID: 2074251827087024459}
   myPanel: {fileID: 6793648801645041678}
+  AdImage: {fileID: 0}
+  targetMaterial: {fileID: 0}
   currentclickcount: 3
 --- !u!1 &2763994243892448716
 GameObject:
@@ -407,6 +411,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::buttonHealth
   mybutton: {fileID: 4559223069047282938}
   myPanel: {fileID: 7040419410950537779}
+  AdImage: {fileID: 0}
+  targetMaterial: {fileID: 0}
   currentclickcount: 3
 --- !u!1 &5010647810645086198
 GameObject:
@@ -495,11 +501,11 @@ GameObject:
   - component: {fileID: 594091356707513216}
   m_Layer: 5
   m_Name: PopUps
-  m_TagString: Untagged
+  m_TagString: popUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &594091356707513216
 RectTransform:
   m_ObjectHideFlags: 0
@@ -811,6 +817,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::buttonHealth
   mybutton: {fileID: 9186383963365816728}
   myPanel: {fileID: 5010647810645086198}
+  AdImage: {fileID: 0}
+  targetMaterial: {fileID: 0}
   currentclickcount: 3
 --- !u!1 &8290314737656752986
 GameObject:
@@ -1023,6 +1031,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::buttonHealth
   mybutton: {fileID: 2378558758529293714}
   myPanel: {fileID: 8290314737656752986}
+  AdImage: {fileID: 0}
+  targetMaterial: {fileID: 0}
   currentclickcount: 3
 --- !u!1 &8610781834417634981
 GameObject:

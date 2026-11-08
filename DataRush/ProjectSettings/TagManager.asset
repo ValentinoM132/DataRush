@@ -11,6 +11,8 @@ TagManager:
   - NavMeshCharacter
   - HUD
   - PlayerProjectile
+  - Music
+  - CyberwolfModel
   layers:
   - Default
   - TransparentFX

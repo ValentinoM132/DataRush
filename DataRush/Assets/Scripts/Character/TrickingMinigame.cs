@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -18,10 +19,12 @@ public class TrickingMinigame : MonoBehaviour
     public GameObject comboTransform;
     public GameObject comboPrefab;
     public Sprite[] comboImage = new Sprite[3];
+    public Animator animator;
+    public int currentIndex;
+    [SerializeField]private AnimationClip[] clips;
     void Start()
     {
         hitTarget.transform.localPosition = new Vector2(Random.Range(-320, 320), hitTarget.transform.localPosition.y);
-        
     }
 
     private void OnEnable()
@@ -29,6 +32,7 @@ public class TrickingMinigame : MonoBehaviour
         EnhancedTouchSupport.Enable(); // Must be enabled for Touch.activeTouches to work
         comboCounter = 0;
         speed = 0.75f;
+        animator.SetTrigger("StartTrick");
     }
 
     private void OnDisable()
@@ -61,6 +65,7 @@ public class TrickingMinigame : MonoBehaviour
                         Combo.GetComponent<ImageFloatUp>().sprite = comboImage[2];
                     }
                         comboCounter++;
+                    StartCoroutine(PlayRandomly());
                     speed = speed + .15f;
                     GameManager.Instance.AddScore(500);
                     SoundManager.Instance.PlaySound("TrickSuccess", trickSuccessVolume);
@@ -70,6 +75,7 @@ public class TrickingMinigame : MonoBehaviour
                 {
                     
                     comboCounter = 0;
+                    animator.SetTrigger("Failure");
                     GameObject Combo = Instantiate(comboPrefab, comboTransform.transform);
                     Combo.gameObject.transform.SetParent(comboTransform.transform, false);
                     Combo.GetComponent<ImageFloatUp>().sprite = comboImage[0];
@@ -91,7 +97,21 @@ public class TrickingMinigame : MonoBehaviour
         
 
     }
-
+    private IEnumerator PlayRandomly()
+    {
+        int randIndex = Random.Range(2, clips.Length);
+        if (clips.Length > 0 && randIndex != currentIndex)
+            {
+                currentIndex = randIndex;
+                AnimationClip randClip = clips[randIndex];
+                animator.Play(randClip.name);
+            }
+            else
+            {
+                StartCoroutine(PlayRandomly()); // Recursively call until a different clip is found
+            yield return null;
+            }
+    }
     private bool IsOverlapping(RectTransform a, RectTransform b)
     {
         // Convert RectTransform boundaries to screen-space Rects

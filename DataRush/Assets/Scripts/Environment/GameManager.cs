@@ -1,3 +1,4 @@
+using TMPro;
 using Unity.VectorGraphics;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,15 +13,22 @@ public class GameManager : MonoBehaviour
     public Color playerColor;
     public bool canGetHit = true;
     [Header("UI Connections")]
-    public TMPro.TextMeshProUGUI scoreText; // Reference to the UI Text component
-    public TMPro.TextMeshProUGUI healthText; // Reference to the UI Text component
+    public TextMeshProUGUI scoreText; // Reference to the UI Text component
+    public TextMeshProUGUI healthText; // Reference to the UI Text component
     public GameObject gameOverPanel; // Reference to the Game Over UI panel
+    public TextMeshProUGUI finalScoreText;
+    public TextMeshProUGUI highScoreText;
+    public GameObject newBestText; // This text only gets shown if the player achieves a new high score
+    public GameObject EndingScreen;
+    [Tooltip("Name of location where high score for this level is stored. Make sure it is unique or else!!!")]
+    public string highScoreName;
 
     [Header("Powerup Settings")]
     private int scoreMultiplier = 1;
     private bool multPowerupActive = false;
     private float multPowerupDuration = 0f;
     [SerializeField, Range(0.5f, 30f)] public float baseMultPowerupDuration = 15f;
+    public GameObject Shield; //reference to vfx
 
     private bool invulnPowerupActive = false;
     private float invulnPowerupDuration = 0f;
@@ -50,6 +58,7 @@ public class GameManager : MonoBehaviour
         UpdateUI();
 
         blaster = Component.FindAnyObjectByType<PlayerBlaster>(); // Get the playerblaster in the scene
+        EndingScreen.SetActive(false);
     }
 
     private void Update()
@@ -81,6 +90,7 @@ public class GameManager : MonoBehaviour
                 invulnPowerupActive = false;
                 canGetHit = true;
                 durationBars[2].SetActive(false);
+                Shield.gameObject.SetActive(false);
             }
         }
         if (blasterPowerupActive) // blaster powerup timer
@@ -157,6 +167,7 @@ public class GameManager : MonoBehaviour
         invulnPowerupActive = true;
         durationBarFills[2].fillAmount = invulnPowerupDuration;
         durationBars[2].SetActive(true);
+        Shield.gameObject.SetActive(true);
     }
     // Call when player pickes up Blaster powerup
     public void BlasterPowerup()
@@ -213,5 +224,28 @@ public class GameManager : MonoBehaviour
     public bool IsInvulnerable()
     {
         return invulnPowerupActive;
+    }
+
+    public void InitializeWinScreen()
+    {
+        int highScoreValue = 0;
+        finalScoreText.text = "Your Score: " + CurrentScore.ToString();
+        if (PlayerPrefs.HasKey(highScoreName)) // Check if a high score has already been set for this level
+        {
+            highScoreValue = PlayerPrefs.GetInt(highScoreName);
+        }
+
+        if (CurrentScore > highScoreValue)
+        {
+            newBestText.SetActive(true);
+            highScoreText.text = "High Score: " + CurrentScore.ToString();
+            PlayerPrefs.SetInt(highScoreName, CurrentScore); // Store new high score
+        }
+        else
+        {
+            newBestText.SetActive(false);
+            highScoreText.text = "High Score: " + highScoreValue.ToString();
+        }
+        EndingScreen.SetActive(true);
     }
 }
