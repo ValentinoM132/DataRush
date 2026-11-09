@@ -13846,7 +13846,7 @@ Mesh:
   m_LocalAABB:
     m_Center: {x: 0, y: 0, z: 0.625}
     m_Extent: {x: 0.8838835, y: 1, z: 0.625}
-  m_CookingOptions: -1
+  m_CookingOptions: 30
   m_PreBakeConvexCollisionMesh: 0
   m_PreBakeTriangleCollisionMesh: 0
   m_BakedConvexCollisionMesh: 
@@ -37421,7 +37421,7 @@ Mesh:
   m_LocalAABB:
     m_Center: {x: 0, y: 0, z: 0.625}
     m_Extent: {x: 0.8838835, y: 1, z: 0.625}
-  m_CookingOptions: -1
+  m_CookingOptions: 30
   m_PreBakeConvexCollisionMesh: 0
   m_PreBakeTriangleCollisionMesh: 0
   m_BakedConvexCollisionMesh: 
@@ -41659,10 +41659,6 @@ PrefabInstance:
       propertyPath: 'UITurnOff.Array.data[6]'
       value: 
       objectReference: {fileID: 1882837451}
-    - target: {fileID: 5021321739437444701, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
-      propertyPath: soundDictionary.Array.data[4].value
-      value: 
-      objectReference: {fileID: 8300000, guid: 0a72f6c9b5c80574383085e18c404ce4, type: 3}
     - target: {fileID: 6536303372366485025, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
       propertyPath: m_Name
       value: PlayerCharacter
@@ -43011,7 +43007,7 @@ Mesh:
   m_LocalAABB:
     m_Center: {x: 0, y: 0, z: 0.625}
     m_Extent: {x: 0.8838835, y: 1, z: 0.625}
-  m_CookingOptions: -1
+  m_CookingOptions: 30
   m_PreBakeConvexCollisionMesh: 0
   m_PreBakeTriangleCollisionMesh: 0
   m_BakedConvexCollisionMesh: 
@@ -47519,7 +47515,7 @@ Mesh:
   m_LocalAABB:
     m_Center: {x: -0.00000011920929, y: 0, z: -0.625}
     m_Extent: {x: 0.8838834, y: 1, z: 0.625}
-  m_CookingOptions: -1
+  m_CookingOptions: 30
   m_PreBakeConvexCollisionMesh: 0
   m_PreBakeTriangleCollisionMesh: 0
   m_BakedConvexCollisionMesh: 
