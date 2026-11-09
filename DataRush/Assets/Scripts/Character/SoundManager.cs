@@ -8,6 +8,11 @@ public class SoundManager : MonoBehaviour
 { 
     [SerializeField] private Dictionary<string, AudioClip> soundDictionary = new Dictionary<string, AudioClip>();
     public AudioSource audioSource;
+    public AudioClip[] CoinSounds;
+    public AudioClip[] PlayerDamageSounds;
+    public AudioClip[] TrickFail;
+    public AudioClip[] ShootSounds;
+    public AudioClip[] TrickWin; // Array of arrays to hold different sound categories
     public static SoundManager Instance { get; private set; }
 
     private void Awake()
@@ -23,6 +28,41 @@ public class SoundManager : MonoBehaviour
     }
     public void PlaySound(string soundName, float volume)
     {
+        if(soundName == "CoinPickup")
+        {
+            AudioClip coinSound = CoinSounds[UnityEngine.Random.Range(0, CoinSounds.Length)];
+            audioSource.volume = volume;
+            audioSource.PlayOneShot(coinSound);
+            return;
+        }
+        else if (soundName == "CharacterDamage")
+        {
+            AudioClip damageSound = PlayerDamageSounds[UnityEngine.Random.Range(0, PlayerDamageSounds.Length)];
+            audioSource.volume = volume;
+            audioSource.PlayOneShot(damageSound);
+            return;
+        }
+        else if (soundName == "TrickFailure")
+        {
+            AudioClip failSound = TrickFail[UnityEngine.Random.Range(0, TrickFail.Length)];
+            audioSource.volume = volume;
+            audioSource.PlayOneShot(failSound);
+            return;
+        }
+        else if (soundName == "PlayerShoot")
+        {
+            AudioClip shootSound = ShootSounds[UnityEngine.Random.Range(0, ShootSounds.Length)];
+            audioSource.volume = volume;
+            audioSource.PlayOneShot(shootSound);
+            return;
+        }
+        else if (soundName == "TrickSuccess")
+        {
+            AudioClip winSound = TrickWin[UnityEngine.Random.Range(0, TrickWin.Length)];
+            audioSource.volume = volume;
+            audioSource.PlayOneShot(winSound);
+            return;
+        }
         if (soundDictionary.TryGetValue(soundName, out AudioClip clip))
         {
             if (clip != null)
@@ -31,7 +71,7 @@ public class SoundManager : MonoBehaviour
                 audioSource.PlayOneShot(clip);
             }
             else
-            Debug.Log("SoundName Found But Clip wasn't");
+                Debug.Log("SoundName Found But Clip wasn't");
 
         }
         else

@@ -43547,7 +43547,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 983100818443238199, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
       propertyPath: moveSpeed
-      value: 7
+      value: 8.83
       objectReference: {fileID: 0}
     - target: {fileID: 983100818443238199, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
       propertyPath: turnSpeed
@@ -43555,7 +43555,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 983100818443238199, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
       propertyPath: raycastMinimum
-      value: 0.05
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 998606637357687305, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
       propertyPath: m_RenderPostProcessing
@@ -43563,7 +43563,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1277440101631431114, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
       propertyPath: m_AutoRepath
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1277440101631431114, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
       propertyPath: m_AgentTypeID

@@ -324,6 +324,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4938320184911744045, guid: 81bb78f2e3b04f343b8a369b18edfc23, type: 3}
+      propertyPath: lengthInSec
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4938320184911744045, guid: 81bb78f2e3b04f343b8a369b18edfc23, type: 3}
       propertyPath: ShapeModule.type
       value: 13
       objectReference: {fileID: 0}
@@ -334,6 +338,10 @@ PrefabInstance:
     - target: {fileID: 4938320184911744045, guid: 81bb78f2e3b04f343b8a369b18edfc23, type: 3}
       propertyPath: ShapeModule.radiusThickness
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4938320184911744045, guid: 81bb78f2e3b04f343b8a369b18edfc23, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.a
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7992795004307317540, guid: 81bb78f2e3b04f343b8a369b18edfc23, type: 3}
       propertyPath: m_LocalPosition.x

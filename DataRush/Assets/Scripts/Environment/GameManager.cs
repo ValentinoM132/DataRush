@@ -32,6 +32,8 @@ public class GameManager : MonoBehaviour
     private float multPowerupDuration = 0f;
     [SerializeField, Range(0.5f, 30f)] public float baseMultPowerupDuration = 15f;
     public GameObject Shield; //reference to vfx
+    public GameObject shieldAura;
+    public GameObject goldAura;
 
     private bool invulnPowerupActive = false;
     private float invulnPowerupDuration = 0f;
@@ -47,7 +49,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] public Image[] durationBarFills;
     public Sprite[] Firewalls;
 
-
+    private void Start()
+    {
+        shieldAura = GameObject.FindGameObjectWithTag("Shielded");
+        goldAura = GameObject.FindGameObjectWithTag("Gold");
+    }
 
     private void Awake()
     {
@@ -62,6 +68,7 @@ public class GameManager : MonoBehaviour
         UpdateUI();
 
         blaster = Component.FindAnyObjectByType<PlayerBlaster>(); // Get the playerblaster in the scene
+        
         EndingScreen.SetActive(false);
     }
 
@@ -83,6 +90,7 @@ public class GameManager : MonoBehaviour
                 multPowerupActive = false;
                 scoreMultiplier = 1;
                 durationBars[0].SetActive(false);
+                goldAura.GetComponent<SkinnedMeshRenderer>().enabled = false;
             }
         }
         if (invulnPowerupActive) // invulnerability powerup timer
@@ -95,6 +103,7 @@ public class GameManager : MonoBehaviour
                 canGetHit = true;
                 durationBars[2].SetActive(false);
                 Shield.gameObject.SetActive(false);
+                shieldAura.GetComponent<SkinnedMeshRenderer>().enabled = false;
             }
         }
         if (blasterPowerupActive) // blaster powerup timer
@@ -173,6 +182,7 @@ public class GameManager : MonoBehaviour
     // Call when a multiplier powerup is picked up
     public void MultiplierPowerup()
     {
+        goldAura.GetComponent<SkinnedMeshRenderer>().enabled = true; 
         scoreMultiplier *= 2; // 2x Mult powerups can stack
         multPowerupDuration = baseMultPowerupDuration;
         multPowerupActive = true;
@@ -188,6 +198,7 @@ public class GameManager : MonoBehaviour
         durationBarFills[2].fillAmount = invulnPowerupDuration;
         durationBars[2].SetActive(true);
         Shield.gameObject.SetActive(true);
+        shieldAura.GetComponent<SkinnedMeshRenderer>().enabled = true;
     }
     // Call when player pickes up Blaster powerup
     public void BlasterPowerup()
