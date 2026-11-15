@@ -16,67 +16,28 @@ public class BetterPlayerController : MonoBehaviour
     public float raycastMinimum = .2f;
 
     public LayerMask layerMask;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
+    [SerializeField] private LayerMask wallLayer;
+    [SerializeField] private float rayDistance = 10f;
+    [SerializeField] private float centeringSpeed = 5f;
+
     void Update()
     {
-        RaycastHit leftHitData;
-        RaycastHit rightHitData;
+        // Cast rays to the left and right relative to the character's facing direction
+        bool hitLeft = Physics.Raycast(transform.position, -transform.right, out RaycastHit leftHit, rayDistance, wallLayer);
+        bool hitRight = Physics.Raycast(transform.position, transform.right, out RaycastHit rightHit, rayDistance, wallLayer);
 
-        
-        if (Physics.Raycast(raycastShootOut.position, -transform.right * 10f, out leftHitData, 10f, layerMask))
+        if (hitLeft && hitRight)
         {
-            leftDistance = leftHitData.distance;
+            // Calculate the exact midpoint between the two hit points
+            Vector3 midpoint = (leftHit.point + rightHit.point) / 2f;
 
+            // Keep the character's current Y (height) and forward progress
+            Vector3 targetPosition = new Vector3(midpoint.x, transform.position.y, midpoint.z);
+
+            // Smoothly move toward the center
+            transform.position = Vector3.Lerp(transform.position, targetPosition, centeringSpeed * Time.deltaTime);
         }
-
-        if (Physics.Raycast(raycastShootOut.position, transform.right * 10f, out rightHitData, 10f, layerMask))
-        {
-            rightDistance = rightHitData.distance;
-
-        }
-
-        if (rightDistance > leftDistance)
-        {
-            rightDistanceVector = Vector3.right * turnSpeed * Time.deltaTime;
-
-        }
-        else
-        {
-            rightDistanceVector = Vector3.zero;
-        }
-
-        if (leftDistance > rightDistance)
-        {
-            leftDistanceVector = Vector3.left * turnSpeed * Time.deltaTime;
-        }
-        else
-        {
-            leftDistanceVector = Vector3.zero;
-        }
-
-
-
-        // Calculate target rotation based on movement vector
-        Debug.Log(movementDirection);
-        movementDirection = rightDistanceVector + leftDistanceVector;
-        if(movementDirection.magnitude < raycastMinimum)
-        {
-            movementDirection = Vector3.zero;
-        }
-        else
-        {
-            movementDirection.Normalize();
-        }
-        transform.Translate(movementDirection * moveSpeed * Time.deltaTime);
-        Debug.DrawRay(raycastShootOut.position, -transform.right * 10f, Color.red);
-        Debug.DrawRay(raycastShootOut.position, transform.right * 10f, Color.green);
-
-       
     }
 }
+

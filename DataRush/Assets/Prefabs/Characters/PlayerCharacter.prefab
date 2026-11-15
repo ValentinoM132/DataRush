@@ -1527,6 +1527,11 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 128
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  rayDistance: 12.47
+  centeringSpeed: 8.03
 --- !u!4 &7589398485861884240 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9064213114410782889, guid: 4c451ea94786a9e45b4d89faa63d26f2, type: 3}
