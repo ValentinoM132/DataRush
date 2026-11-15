@@ -66,6 +66,6 @@ Material:
     - _Speed: 0.5
     - _XRMotionVectorsPass: 0
     m_Colors:
-    - _Matric_Color: {r: 0.12549019, g: 0.63405603, b: 1, a: 0.49019608}
+    - _Matric_Color: {r: 1, g: 0.6907107, b: 0.654902, a: 0.49019608}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
