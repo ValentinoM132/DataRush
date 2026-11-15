@@ -13,6 +13,7 @@ public class UIManager : MonoBehaviour
     public AudioClip menuClose;
     public AudioClip ThunderSound;
     public GameObject Camera;
+    public TMP_Text versionNumber;
 
     [Header("HighScores")]
     public TextMeshProUGUI[] highScoreDisplays;
@@ -20,6 +21,11 @@ public class UIManager : MonoBehaviour
     public Button[] levelButtons;
 
     private bool unlockAll = false;
+
+    private void Awake()
+    {
+        versionNumber.text = "v " + Application.version;
+    }
     public void StartGame(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
