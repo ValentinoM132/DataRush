@@ -71,7 +71,11 @@ PrefabInstance:
     - target: {fileID: 4138131101428223138, guid: f92de6e655930da4e9cc2a5bf75ae930, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: dbe97366b00108b4aa871ad391da0b1e, type: 2}
+      objectReference: {fileID: 2100000, guid: add317fe71c569e4db3b5e677d145a5a, type: 2}
+    - target: {fileID: 4138131101428223138, guid: f92de6e655930da4e9cc2a5bf75ae930, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: add317fe71c569e4db3b5e677d145a5a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -100,6 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a2032d68a860ef40882fb00eb10902d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  audioVolume: 0.75
 --- !u!65 &1500567030638350051
 BoxCollider:
   m_ObjectHideFlags: 0
