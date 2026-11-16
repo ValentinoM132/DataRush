@@ -16843,7 +16843,7 @@ MonoBehaviour:
   gameOverPanel: {fileID: 663075667}
   finalScoreText: {fileID: 1320411768}
   highScoreText: {fileID: 1320411767}
-  newBestText: {fileID: 1320411766}
+  newBestText: {fileID: 663075665}
   EndingScreen: {fileID: 198816243}
   highScoreName: Level2
   Playerhurt: 0
@@ -38160,6 +38160,11 @@ PrefabInstance:
 --- !u!224 &663075664 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8293392111190404294, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
+  m_PrefabInstance: {fileID: 663075663}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &663075665 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9114249359574941710, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
   m_PrefabInstance: {fileID: 663075663}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &663075666 stripped
@@ -84879,11 +84884,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6783255136107983946, guid: f63c7e54e31e051439bbbfd8a5db3100, type: 3}
   m_PrefabInstance: {fileID: 1319945019}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1320411766 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5916557492848835119, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
-  m_PrefabInstance: {fileID: 663075663}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1320411767 stripped
 MonoBehaviour:

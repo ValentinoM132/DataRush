@@ -24629,7 +24629,7 @@ MonoBehaviour:
   gameOverPanel: {fileID: 1104181135}
   finalScoreText: {fileID: 1393615057}
   highScoreText: {fileID: 906822267}
-  newBestText: {fileID: 477429940}
+  newBestText: {fileID: 1104181136}
   EndingScreen: {fileID: 142069224}
   highScoreName: Level1
   Playerhurt: 0
@@ -45441,11 +45441,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ef2a8bcda69a10344bd97806d446ac65, type: 3}
   m_PrefabInstance: {fileID: 476794292}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &477429940 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5916557492848835119, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
-  m_PrefabInstance: {fileID: 1104181133}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &478632074
 PrefabInstance:
@@ -103476,6 +103471,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -0.00024414062
       objectReference: {fileID: 0}
+    - target: {fileID: 4161362417043085038, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6433856700164163705, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
       propertyPath: m_Name
       value: HUD
@@ -103600,6 +103599,11 @@ MonoBehaviour:
 --- !u!1 &1104181135 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8965918438075705453, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
+  m_PrefabInstance: {fileID: 1104181133}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1104181136 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9114249359574941710, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
   m_PrefabInstance: {fileID: 1104181133}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1104181137 stripped

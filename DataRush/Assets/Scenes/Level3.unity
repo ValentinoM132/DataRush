@@ -14070,7 +14070,7 @@ MonoBehaviour:
   gameOverPanel: {fileID: 1640282583}
   finalScoreText: {fileID: 282195768}
   highScoreText: {fileID: 282195767}
-  newBestText: {fileID: 282195766}
+  newBestText: {fileID: 976299673}
   EndingScreen: {fileID: 187602847}
   highScoreName: Level3
   Playerhurt: 0
@@ -14078,6 +14078,8 @@ MonoBehaviour:
   regenDelay: 5
   baseMultPowerupDuration: 15
   Shield: {fileID: 0}
+  shieldAura: {fileID: 0}
+  goldAura: {fileID: 0}
   baseInvulnPowerupDuration: 10
   baseBlasterPowerupDuration: 12
   durationBars:
@@ -15744,11 +15746,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 67437018}
   m_LocalEulerAnglesHint: {x: 0, y: -629.999, z: 0}
---- !u!1 &282195766 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5916557492848835119, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
-  m_PrefabInstance: {fileID: 1882837448}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &282195767 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5511586011658342964, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
@@ -67489,6 +67486,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1477376218130676339, guid: 20c3886a2eed14943b87d7467fbb0fce, type: 3}
   m_PrefabInstance: {fileID: 976022502}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &976299673 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9114249359574941710, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
+  m_PrefabInstance: {fileID: 1882837448}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &978961697
 PrefabInstance:

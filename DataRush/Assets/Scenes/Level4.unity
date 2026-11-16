@@ -21109,7 +21109,7 @@ MonoBehaviour:
   gameOverPanel: {fileID: 1104181135}
   finalScoreText: {fileID: 1393615057}
   highScoreText: {fileID: 906822267}
-  newBestText: {fileID: 477429940}
+  newBestText: {fileID: 1104181136}
   EndingScreen: {fileID: 142069224}
   highScoreName: Level4
   Playerhurt: 0
@@ -37989,11 +37989,6 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
---- !u!1 &477429940 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5916557492848835119, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
-  m_PrefabInstance: {fileID: 1104181133}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &478506053 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2028597251848516349, guid: 6d53bd4304bd37b45981f558bc9ec9eb, type: 3}
@@ -85732,6 +85727,11 @@ MonoBehaviour:
 --- !u!1 &1104181135 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8965918438075705453, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
+  m_PrefabInstance: {fileID: 1104181133}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1104181136 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9114249359574941710, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
   m_PrefabInstance: {fileID: 1104181133}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1104181137 stripped
