@@ -127836,7 +127836,7 @@ PrefabInstance:
       objectReference: {fileID: 1104181142}
     - target: {fileID: 5021321739437444701, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
       propertyPath: soundDictionary.Array.size
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 5021321739437444701, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
       propertyPath: soundDictionary.Array.data[10].key
@@ -127845,6 +127845,10 @@ PrefabInstance:
     - target: {fileID: 5021321739437444701, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
       propertyPath: soundDictionary.Array.data[11].key
       value: PlayerShoot
+      objectReference: {fileID: 0}
+    - target: {fileID: 5021321739437444701, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+      propertyPath: soundDictionary.Array.data[12].key
+      value: FireWallSound
       objectReference: {fileID: 0}
     - target: {fileID: 5021321739437444701, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
       propertyPath: soundDictionary.Array.data[1].value
@@ -127874,6 +127878,10 @@ PrefabInstance:
       propertyPath: soundDictionary.Array.data[11].value
       value: 
       objectReference: {fileID: 8300000, guid: 6ca42a9c84d617243853d8171e629e61, type: 3}
+    - target: {fileID: 5021321739437444701, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+      propertyPath: soundDictionary.Array.data[12].value
+      value: 
+      objectReference: {fileID: 8300000, guid: d96b4a5e7afdb8546a62bf9f3e2eb61c, type: 3}
     - target: {fileID: 5051096840016863108, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
       value: 4294967295

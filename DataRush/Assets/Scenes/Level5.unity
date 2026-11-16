@@ -43936,6 +43936,18 @@ PrefabInstance:
       propertyPath: 'UITurnOff.Array.data[6]'
       value: 
       objectReference: {fileID: 1882837451}
+    - target: {fileID: 5021321739437444701, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+      propertyPath: soundDictionary.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5021321739437444701, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+      propertyPath: soundDictionary.Array.data[12].key
+      value: FireWall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5021321739437444701, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
+      propertyPath: soundDictionary.Array.data[12].value
+      value: 
+      objectReference: {fileID: 8300000, guid: d96b4a5e7afdb8546a62bf9f3e2eb61c, type: 3}
     - target: {fileID: 6536303372366485025, guid: 777ec9f749e990b4fa81ccfdb70b3b70, type: 3}
       propertyPath: m_Name
       value: PlayerCharacter
