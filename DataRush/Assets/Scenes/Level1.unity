@@ -9404,6 +9404,17 @@ Transform:
   - {fileID: 1299559743}
   m_Father: {fileID: 67437018}
   m_LocalEulerAnglesHint: {x: 0, y: 269.999, z: 0}
+--- !u!114 &103734923 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7419245051943796929, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
+  m_PrefabInstance: {fileID: 1104181133}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1 &104543604
 GameObject:
   m_ObjectHideFlags: 0
@@ -24629,6 +24640,10 @@ MonoBehaviour:
   gameOverPanel: {fileID: 1104181135}
   finalScoreText: {fileID: 1393615057}
   highScoreText: {fileID: 906822267}
+  blipCoinTotal: {fileID: 457761109}
+  loseFinalScoreText: {fileID: 103734923}
+  loseHighScoreText: {fileID: 835157134}
+  loseBlipCoinTotal: {fileID: 1761051686}
   newBestText: {fileID: 1104181136}
   EndingScreen: {fileID: 142069224}
   highScoreName: Level1
@@ -24653,6 +24668,7 @@ MonoBehaviour:
   - {fileID: -6877820614830844790, guid: c39620ceede1b794db460750978c8d01, type: 3}
   - {fileID: 8935857428104705336, guid: 2d797cc5322ed804c862467e35553567, type: 3}
   - {fileID: -3744470206668486953, guid: 1b58c196d28ffc94eb3f1f4ac28f2ea8, type: 3}
+  blipCoinCount: 0
 --- !u!4 &258091991
 Transform:
   m_ObjectHideFlags: 0
@@ -43715,6 +43731,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1477376218130676339, guid: 20c3886a2eed14943b87d7467fbb0fce, type: 3}
   m_PrefabInstance: {fileID: 455533572}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &457761109 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4649495785316136547, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
+  m_PrefabInstance: {fileID: 1104181133}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1001 &458570158
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -79048,6 +79075,17 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6541589164162183747, guid: 3c69f71e98fc40b4d9cef529056089e1, type: 3}
+--- !u!114 &835157134 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2190848557973503959, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
+  m_PrefabInstance: {fileID: 1104181133}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!4 &836004232 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3c69f71e98fc40b4d9cef529056089e1, type: 3}
@@ -159479,6 +159517,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6783255136107983946, guid: f63c7e54e31e051439bbbfd8a5db3100, type: 3}
   m_PrefabInstance: {fileID: 1760617475}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1761051686 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6719174707639272498, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
+  m_PrefabInstance: {fileID: 1104181133}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1 &1762202729 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3c69f71e98fc40b4d9cef529056089e1, type: 3}

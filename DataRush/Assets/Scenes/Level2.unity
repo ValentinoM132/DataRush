@@ -16843,6 +16843,10 @@ MonoBehaviour:
   gameOverPanel: {fileID: 663075667}
   finalScoreText: {fileID: 1320411768}
   highScoreText: {fileID: 1320411767}
+  blipCoinTotal: {fileID: 508174454}
+  loseFinalScoreText: {fileID: 508174457}
+  loseHighScoreText: {fileID: 508174455}
+  loseBlipCoinTotal: {fileID: 508174456}
   newBestText: {fileID: 663075665}
   EndingScreen: {fileID: 198816243}
   highScoreName: Level2
@@ -16867,6 +16871,7 @@ MonoBehaviour:
   - {fileID: -6877820614830844790, guid: c39620ceede1b794db460750978c8d01, type: 3}
   - {fileID: 8935857428104705336, guid: 2d797cc5322ed804c862467e35553567, type: 3}
   - {fileID: -3744470206668486953, guid: 1b58c196d28ffc94eb3f1f4ac28f2ea8, type: 3}
+  blipCoinCount: 0
 --- !u!4 &258091991
 Transform:
   m_ObjectHideFlags: 0
@@ -29891,6 +29896,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6783255136107983946, guid: f63c7e54e31e051439bbbfd8a5db3100, type: 3}
   m_PrefabInstance: {fileID: 502913035}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &508174454 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4649495785316136547, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
+  m_PrefabInstance: {fileID: 663075663}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!114 &508174455 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2190848557973503959, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
+  m_PrefabInstance: {fileID: 663075663}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!114 &508174456 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6719174707639272498, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
+  m_PrefabInstance: {fileID: 663075663}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!114 &508174457 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7419245051943796929, guid: ee9e3fa40bc04cc459699a0ad7d576d9, type: 3}
+  m_PrefabInstance: {fileID: 663075663}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1001 &512488701
 PrefabInstance:
   m_ObjectHideFlags: 0

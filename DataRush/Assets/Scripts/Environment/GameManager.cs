@@ -17,6 +17,10 @@ public class GameManager : MonoBehaviour
     public GameObject gameOverPanel; // Reference to the Game Over UI panel
     public TextMeshProUGUI finalScoreText;
     public TextMeshProUGUI highScoreText;
+    public TextMeshProUGUI blipCoinTotal;
+    public TextMeshProUGUI loseFinalScoreText; // Reference to final score text on game over screen
+    public TextMeshProUGUI loseHighScoreText;
+    public TextMeshProUGUI loseBlipCoinTotal;
     public GameObject newBestText; // This text only gets shown if the player achieves a new high score
     public GameObject EndingScreen;
     [Tooltip("Name of location where high score for this level is stored. Make sure it is unique or else!!!")]
@@ -49,6 +53,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] public Image[] durationBarFills;
     public Sprite[] Firewalls;
 
+    [Header("Misc")]
+    public int blipCoinCount;
+
     private void Start()
     {
         shieldAura = GameObject.FindGameObjectWithTag("Shielded");
@@ -77,6 +84,7 @@ public class GameManager : MonoBehaviour
         if (PlayerDead)
         {
             Time.timeScale = 0; // Pause the game
+            InitializeLoseScreen(); // Set up Game Over UI
             gameOverPanel.SetActive(true); // Show the Game Over UI panel
             SoundManager.Instance.PlaySound("GameOver", .15f);
             Debug.Log("Game Over!");
@@ -265,7 +273,8 @@ public class GameManager : MonoBehaviour
         }
 
         int highScoreValue = 0;
-        finalScoreText.text = "Your Score:   " + CurrentScore.ToString();
+        finalScoreText.text = " " + CurrentScore.ToString();
+        blipCoinTotal.text = " " + blipCoinCount.ToString();
         if (PlayerPrefs.HasKey(highScoreName)) // Check if a high score has already been set for this level
         {
             highScoreValue = PlayerPrefs.GetInt(highScoreName);
@@ -274,14 +283,33 @@ public class GameManager : MonoBehaviour
         if (CurrentScore > highScoreValue)
         {
             newBestText.SetActive(true);
-            highScoreText.text = "High Score:   " + CurrentScore.ToString();
+            highScoreText.text = " " + CurrentScore.ToString();
             PlayerPrefs.SetInt(highScoreName, CurrentScore); // Store new high score
         }
         else
         {
             newBestText.SetActive(false);
-            highScoreText.text = "High Score:   " + highScoreValue.ToString();
+            highScoreText.text = " " + highScoreValue.ToString();
         }
         EndingScreen.SetActive(true);
+    }
+
+    public void InitializeLoseScreen()
+    {
+        if (gameOverPanel.activeSelf) //don't repeat
+        {
+            return;
+        }
+
+        loseFinalScoreText.text = " " + CurrentScore.ToString();
+        loseBlipCoinTotal.text = " " + blipCoinCount.ToString();
+        if (PlayerPrefs.HasKey(highScoreName))
+        {
+            loseHighScoreText.text = " " + PlayerPrefs.GetInt(highScoreName).ToString();
+        }
+        else
+        {
+            loseHighScoreText.text = " N/A";
+        }
     }
 }

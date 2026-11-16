@@ -11,7 +11,7 @@ public class BlipCoin : MonoBehaviour
             GameManager.Instance.AddScore(100);
             SoundManager.Instance.PlaySound("CoinPickup", audioVolume);
             Destroy(gameObject);
-            
+            GameManager.Instance.blipCoinCount++;
         }
     }
 }
