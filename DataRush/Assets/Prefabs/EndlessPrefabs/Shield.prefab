@@ -83,7 +83,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3774888500673053554}
   m_Layer: 0
-  m_Name: Start (2)
+  m_Name: Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -114,7 +114,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9048928034661438537}
   m_Layer: 0
-  m_Name: End (2)
+  m_Name: End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
